@@ -101,7 +101,7 @@ void demo_basicsReview() {
 
 void demo_flowControl() {
   std::cout << "3: Flow control and data aggregates\n";
-  std::cout << "During this week we covered flow control and data aggregates. We learned how to control the flow of the program (finishing up this topic from last week), and mostly about the if, else and switch statements. These statements are used to control the conditions and path of the running program. We also looked into bitwise operators . The class also covered vectors   .   The coding example below for this week is a bitwise calculation program meant to gather possible comparison values from two integers inputted by the user. This uses the bitwise values of the numbers below these and compare them. This is referenced from my work on HackerRank (Again, the notes are in the code):\n";
+  std::cout << "During this week we covered flow control and data aggregates. We learned how to control the flow of the program (finishing up this topic from last week), and mostly about the if, else and switch statements. These statements are used to control the conditions and path of the running program. We also looked into bitwise operators . The class also covered vectors   .   The coding example below for this week is a bitwise calculation program meant to gather possible comparison values from two integers inputted by the user. This uses the bitwise values of the numbers below these and compare them. This is referenced from my work on HackerRank (Again, the notes are in the code):";
 
   std::cout << "\nPlease insert the highest number to consider: ";
   int max_of_set;  // n
