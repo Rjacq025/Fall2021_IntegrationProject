@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +118,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,6 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,6 +148,8 @@
     <ClCompile Include="EssentialsToCoding_1.cpp" />
     <ClCompile Include="Fall2021_IntegrationProject.cpp" />
     <ClCompile Include="FlowControl_3.cpp" />
+    <ClCompile Include="GenericsTemplates_12.cpp" />
+    <ClCompile Include="Inheritance_9.cpp" />
     <ClCompile Include="OOPModularity_7.cpp" />
     <ClCompile Include="PointFunctMem_4.cpp" />
     <ClCompile Include="StringsAsObjNspcEx_6.cpp" />
@@ -153,6 +159,8 @@
     <ClInclude Include="BasicsReview_2.h" />
     <ClInclude Include="EssentialsToCoding_1.h" />
     <ClInclude Include="FlowControl_3.h" />
+    <ClInclude Include="GenericsTemplates_12.h" />
+    <ClInclude Include="Inheritance_9.h" />
     <ClInclude Include="OOPModularity_7.h" />
     <ClInclude Include="PointFunctMem_4.h" />
     <ClInclude Include="StringsAsObjNspcEx_6.h" />
