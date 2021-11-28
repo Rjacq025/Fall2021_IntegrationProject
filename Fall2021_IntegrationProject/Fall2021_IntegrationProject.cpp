@@ -151,40 +151,96 @@ void demo_flowControl() {
   // Personal Note: I'm not making this into a struct or a class so I'm not using a header for this week.
 }
 
+
+
+
 //////////////////////////////////////////////////////////////////// Week 4 ////////////////////////////////////////////////////////////////////////////
 
 void demo_pointer() {
   std::cout << "4: Pointers, functions, and memory - Parameter passing, "
                "dereferencing\n";
+  std::cout << "\n";
+
+
+  ///////////// Parameter passing 
+  std::cout << "The first topic we will cover will be passing parameters. This can be done a couple of different ways\n";
+
+  // Parameters: passing by value
+  demonstrate_functions();
+
+
+  //Mention new topic
+
+  demonstrate_more_function_stuff();
+
+
+
+  // This part is for me to work on!!!
+  // 
+  // ALSO COVER STRUCTS!!!
+  // here's the link: 
+  // Go to time 1:32:56
+  // https://eaglefgcu.sharepoint.com/sites/COP3003Fall2021798/Shared%20Documents/Forms/AllItems.aspx?isAscending=true&sortField=Modified&id=%2Fsites%2FCOP3003Fall2021798%2FShared%20Documents%2FClass%20Meetings%2FRecordings%2FClass%20Meetings%2D20210920%5F163837%2DMeeting%20Recording%2Emp4&parent=%2Fsites%2FCOP3003Fall2021798%2FShared%20Documents%2FClass%20Meetings%2FRecordings
 }
+
+
+
+
+
+
+
 
 ///////////////////////////////////////////////////////////////////// Week 5 ///////////////////////////////////////////////////////////////////////////
 
 void demo_array() {
   std::cout << "5: Data - Arrays of pointers and Conversion - Strings intro\n";
+
+
+
+
+
 }
 
 ///////////////////////////////////////////////////////////////////// Week 6 ////////////////////////////////////////////////////////////////////////////
 
 void demo_data() {
   std::cout << "6: Data - Strings as objects, namespaces, exceptions\n";
+
+
+
+
+
 }
 
 // Week 7
 
 void demo_modularity() {
   std::cout << "7: The essentials of OOP - Modularity (classes and packages)\n";
+
+
+
+
 }
 
 // Week 8
 
 void demo_encapsulation() {
   std::cout << "8: The essentials of OOP - Encapsulation\n";
+
+
+
+
 }
 
 // Week 9
 
-void demo_inheritance() { std::cout << "9: Inheritance - Class hierarchies\n"; }
+void demo_inheritance() { 
+    std::cout << "9: Inheritance - Class hierarchies\n";
+
+
+
+
+}
 
 // Week 10
 
