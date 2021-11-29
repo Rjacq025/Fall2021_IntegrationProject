@@ -38,9 +38,6 @@
     <ClInclude Include="BasicsReview_2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FlowControl_3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="PointFunctMem_4.h">
       <Filter>Header Files</Filter>
     </ClInclude>

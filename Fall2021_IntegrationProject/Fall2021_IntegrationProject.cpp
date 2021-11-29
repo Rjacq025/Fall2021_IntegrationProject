@@ -42,9 +42,10 @@
 
 #include "ArraysofPointConv_5.h"
 #include "BasicsReview_2.h"
-#include "EssentialsToCoding_1.h"
-#include "FlowControl_3.h"
 #include "PointFunctMem_4.h"
+
+
+
 /*
 #include ""
 */
@@ -185,19 +186,23 @@ void demo_pointer() {
 
 
 
-
-
-
-
-
 ///////////////////////////////////////////////////////////////////// Week 5 ///////////////////////////////////////////////////////////////////////////
 
 void demo_array() {
   std::cout << "5: Data - Arrays of pointers and Conversion - Strings intro\n";
+  std::cout << "This week we mainly started the use of objects, specifically focusing on fields, methods, and overall properties of classes. The example code is based off of an example from cplusplus.com and their tutorial on classes, with some adjustments to cover the topics in class. (The actual notes are in the code): \n\n"; 
 
+  //A class is kind of like a blueprint or a cookie cutter (not exactly an existing object). These are the instructions for creating an object with the properties and behaviors created in the class. This would mimic data types like how the int in 'int x' could compare to the Rectangle in 'Rectangle rect;' both create a datatype with characteristics for objects/variables to adopt whenever they are created. 
+  
+  //An object as mentioned earlier is most easily described as the house created from the blueprint or the cookie created from the cookie cutter. It exists with a location in memory like a variable. The only difference is, instead of being a representation of a preset data type, this object is an instance of a class
 
-
-
+  //classes example
+  Rectangle rect;
+  rect.set_width(3);
+  rect.set_height(4);
+  std::cout << "width: " << rect.get_width() << "\n";
+  std::cout << "height: " << rect.get_height() << "\n";
+  std::cout << "area: " << rect.area() << "\n";
 
 }
 
@@ -219,6 +224,7 @@ void demo_modularity() {
 
 
 
+  // look at sept 27 recording(s) if you have to
 
 }
 
