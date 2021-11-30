@@ -39,10 +39,13 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include <string>
 
 #include "ArraysofPointConv_5.h"
 #include "BasicsReview_2.h"
 #include "PointFunctMem_4.h"
+#include "StringsAsObjNspcEx_6.h"
 
 
 
@@ -210,14 +213,20 @@ void demo_array() {
 
 void demo_data() {
   std::cout << "6: Data - Strings as objects, namespaces, exceptions\n";
+  // This week we covered
 
+  //this is the code from cplusplus's tutorial on files we used them in class in our IDE's
+  demo_save_to_file();
 
-
+  //The result from this is coming from a saved file
+  demo_read_from_file();
+  
+  //
 
 
 }
 
-// Week 7
+//////////////////////////////////////////////////////////////////// Week 7 //////////////////////////////////////////////////////////////////////////////
 
 void demo_modularity() {
   std::cout << "7: The essentials of OOP - Modularity (classes and packages)\n";
@@ -268,11 +277,40 @@ void demo_operators() { std::cout << "13: Operators - Pointer Arithmetic\n"; }
 
 // Week 14
 
-void demo_enueratedTypes() { std::cout << "14: Enumerated Types\n"; }
+void demo_enueratedTypes() { 
+    std::cout << "14: Enumerated Types\n"; 
+
+    // There are two types of enums
+    // enums don't have methods in c++
+    // Don't use ALL_CAPS for enumerators
+
+    // Enums are like a class in which all of the objects are predefined
+    // Enumerated types are incredibly useful for code documentation and readability purposes when you need to represent a specific, predefined set of states.
+
+    //edube example
+
+    
+
+
+    // Incrementing and decrementing an enumerator
+
+
+
+}
 
 // Week 15
 
-void demo_wrapUp() { std::cout << "15: Wrap Up\n"; }
+void demo_wrapUp() { 
+    std::cout << "15: Wrap Up\n"; 
+
+    // put the LO number for each point you covered in your code
+    // clean up your project
+    //https://sites.google.com/site/profvanselow/course/cop-3003/projects-3003
+}
+
+
+
+
 
 int main() {
   // Introduction for the user and gets their name
@@ -363,3 +401,12 @@ int main() {
   // Thinking of including an exit option as well
   return 0; // status code (tells the condition of the program)
 }
+
+
+
+
+// 
+
+
+///////////////////////////////////////////////////// Useful links ////////////////////////////////////////////////////////////
+// https://www.learncpp.com/
