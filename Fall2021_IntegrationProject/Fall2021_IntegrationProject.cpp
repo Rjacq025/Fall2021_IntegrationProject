@@ -1,41 +1,5 @@
 //
-//
-//
-//
-// The procedural/functional programming is a programming model that is built
-// around the idea that programs are sequences of instructions to be executed.
-// This primarily focuses on splitting up programs into named sets of
-// instructions called procedures (funtions). A procedure can store local data
-// that is not available from outside the procedure's scope and can also access
-// and modify global data variables
-//
-// The Object-Oriented approach (OOP) is a programming model that is built on
-// the concept of objects that have properties/data (fields) and behaviors/code
-// to modify data (methods). OOP mimics a lot of the real-world attributes of
-// objects
-//
-// Procedural/Functional approach vs. the Object-Oriented approach
-//
-//  Procedural programming has a top down apprach whereas OOP has a bottom up
-//  approach
-//
-//  There is no access specifier (public, protected, private) in procedural
-//  programming whereas OOP does have these access specifiers.
-//
-//  In Procedural programming adding new data and functions are not easy whereas
-//  OOP makes adding new data and functions easy.
-//
-//  Procedural programming does not encapsulate (hide) its data so it is less
-//  secure, whereas OOP does involve encapsulation so data is more secure.
-//
-//  You cannot overload in Procedural programming whereas overloading is
-//  possible in OOP.
-//
-//  In Procedural programming, function is more important than data, whereas in
-//  OOP, data is more important than functions
-//
-//  Procedural programming is based on the unreal world, whereas OOP is based on
-//  the real world
+
 //
 
 #include <iostream>
@@ -46,6 +10,8 @@
 #include "BasicsReview_2.h"
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
+#include "OOPModularity_7PPStack.h"
+#include "OOPModularity_7OOStack.h"
 
 
 
@@ -221,23 +187,61 @@ void demo_data() {
   //The result from this is coming from a saved file
   demo_read_from_file();
   
-  //
-
-
 }
 
 //////////////////////////////////////////////////////////////////// Week 7 //////////////////////////////////////////////////////////////////////////////
 
+
+
 void demo_modularity() {
   std::cout << "7: The essentials of OOP - Modularity (classes and packages)\n";
 
+  //This is an example from edube c++ tutorial 
+  //procedural_stack_demo();
 
+ object_oriented_stack();
 
   // look at sept 27 recording(s) if you have to
-
+  //
+  // LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
+  //
+  // The procedural/functional programming is a programming model that is built
+  // around the idea that programs are sequences of instructions to be executed.
+  // This primarily focuses on splitting up programs into named sets of
+  // instructions called procedures (funtions). A procedure can store local data
+  // that is not available from outside the procedure's scope and can also
+  // access and modify global data variables
+  //
+  // The Object-Oriented approach (OOP) is a programming model that is built on
+  // the concept of objects that have properties/data (fields) and
+  // behaviors/code to modify data (methods). OOP mimics a lot of the real-world
+  // attributes of objects
+  //
+  // Procedural/Functional approach vs. the Object-Oriented approach
+  //
+  //  Procedural programming has a top down apprach whereas OOP has a bottom up
+  //  approach
+  //
+  //  There is no access specifier (public, protected, private) in procedural
+  //  programming whereas OOP does have these access specifiers.
+  //
+  //  In Procedural programming adding new data and functions are not easy
+  //  whereas OOP makes adding new data and functions easy.
+  //
+  //  Procedural programming does not encapsulate (hide) its data so it is less
+  //  secure, whereas OOP does involve encapsulation so data is more secure.
+  //
+  //  You cannot overload in Procedural programming whereas overloading is
+  //  possible in OOP.
+  //
+  //  In Procedural programming, function is more important than data, whereas
+  //  in OOP, data is more important than functions
+  //
+  //  Procedural programming is based on the unreal world, whereas OOP is based
+  //  on the real world
 }
 
-// Week 8
+///////////////////////////////////////////////////////////////////// Week 8 /////////////////////////////////////////////////////////////////////////////
 
 void demo_encapsulation() {
   std::cout << "8: The essentials of OOP - Encapsulation\n";
@@ -247,7 +251,7 @@ void demo_encapsulation() {
 
 }
 
-// Week 9
+//////////////////////////////////////////////////////////////////// Week 9 ///////////////////////////////////////////////////////////////////////////////
 
 void demo_inheritance() { 
     std::cout << "9: Inheritance - Class hierarchies\n";
@@ -405,7 +409,7 @@ int main() {
 
 
 
-// 
+// endl requires std::
 
 
 ///////////////////////////////////////////////////// Useful links ////////////////////////////////////////////////////////////

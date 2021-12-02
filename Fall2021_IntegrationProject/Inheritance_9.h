@@ -1,3 +1,5 @@
+// LO2a. Include comments describing the visibility inheritance model
+// 
 // Inheritance
 //
 // The visibility inheritance model refers to how different inheritance types
