@@ -154,9 +154,8 @@
     <ClInclude Include="ArraysofPointConv_5.h" />
     <ClInclude Include="BasicsReview_2.h" />
     <ClInclude Include="GenericsTemplates_12.h" />
-    <ClInclude Include="OOPModularity_7OOStack.h" />
     <ClInclude Include="Inheritance_9.h" />
-    <ClInclude Include="OOPModularity_7PPStack.h" />
+    <ClInclude Include="OOPModularity_7.h" />
     <ClInclude Include="PointFunctMem_4.h" />
     <ClInclude Include="StringsAsObjNspcEx_6.h" />
   </ItemGroup>

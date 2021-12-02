@@ -10,8 +10,7 @@
 #include "BasicsReview_2.h"
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
-#include "OOPModularity_7PPStack.h"
-#include "OOPModularity_7OOStack.h"
+#include "OOPModularity_7.h"
 
 
 
