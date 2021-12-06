@@ -1,6 +1,4 @@
-//
-
-//
+// This is the driver class that class that is just being used to run the program. the object class classes where we create objects.
 
 #include <iostream>
 #include <fstream>
@@ -11,6 +9,8 @@
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
 #include "OOPModularity_7.h"
+#include "Date_8.h"
+#include "Inheritance_9.h"
 
 
 
@@ -174,6 +174,7 @@ void demo_array() {
 
 }
 
+
 ///////////////////////////////////////////////////////////////////// Week 6 ////////////////////////////////////////////////////////////////////////////
 
 void demo_data() {
@@ -188,20 +189,19 @@ void demo_data() {
   
 }
 
+
 //////////////////////////////////////////////////////////////////// Week 7 //////////////////////////////////////////////////////////////////////////////
-
-
 
 void demo_modularity() {
   std::cout << "7: The essentials of OOP - Modularity (classes and packages)\n";
 
   //This is an example from edube c++ tutorial 
-  //procedural_stack_demo();
+  std::cout << "This is an example of a stack using procedural programming.\n";
+  procedural_stack_demo();
 
+  std::cout << "This is an example of a stack using object oriented based programming\n";
  object_oriented_stack();
 
-  // look at sept 27 recording(s) if you have to
-  //
   // LO4. Include a comment in which you compare and contrast the procedural/functional approach and the object-oriented approach
   //
   // The procedural/functional programming is a programming model that is built
@@ -240,27 +240,78 @@ void demo_modularity() {
   //  on the real world
 }
 
+
 ///////////////////////////////////////////////////////////////////// Week 8 /////////////////////////////////////////////////////////////////////////////
 
 void demo_encapsulation() {
   std::cout << "8: The essentials of OOP - Encapsulation\n";
 
+  std::cout << " This program will post a predetermined date in the Year/Month/Day format:\n\n";
 
-
+  // This example is from learncpp tutorial "Class code and header files"
+  Date_8 my_date(2011, 10, 12); // makes an object
+  std::cout << my_date.getYear() << " / " << my_date.getMonth() << " / " << my_date.getDay() << std::endl;
 
 }
 
 //////////////////////////////////////////////////////////////////// Week 9 ///////////////////////////////////////////////////////////////////////////////
 
 void demo_inheritance() { 
-    std::cout << "9: Inheritance - Class hierarchies\n";
+    std::cout << "9: Inheritance - Class hierarchies\n\n";
+
+    
+
+    Equilateral eqr;
+    eqr.equilateral();
+    eqr.isosceles();
+    eqr.triangle();
 
 
 
+
+
+    // LO2a. Include comments describing the visibility inheritance model
+    //
+    // Inheritance
+    //
+    // The visibility inheritance model refers to how different inheritance
+    // types interact with access specifiers to allow or block class member
+    // access.
+    //
+    // To be more specific, inheritance involves two types of classes, a
+    // super/parent/base class and a sub/child/base class, when these two
+    // classes are created the base class' members (fields & methods) have three
+    // different "Visibility modes" (access levels) which determine which
+    // classes can access it and which cannot. This is what makes a difference
+    // between regular classes and inheritance classes (base/derived).
+    //
+    // 1) If a member in a base class is "public," it will be accessible
+    // to any and all classes. Any class can use this.
+    //
+    // 2) If a member in a base class is "protected," it can only be accessed by
+    // the derived class. Only derived/child/sub classes can use this.
+    //
+    // 3) If a member in a base class is "private," it cannot be accessed by any
+    // other class. No classes, including derived classes, can access this.
+    //
+    //
+    // However the rules are different when it comes to the class' accessibility
+    // themselves (when it's not public of course)
+    //
+    // 1) Protected Visibility Mode: If the base class is "protected,"
+    // then both the "public" and "protected" member of the base class will also
+    // be protected in the derived class
+    //
+    // 2) Private Visibility Mode: If the base class is "private," then both the
+    // "public" and "protected" member of the base class will also be private in
+    // the derived class
+    //
+    //
+    //
 
 }
 
-// Week 10
+//////////////////////////////////////////////////////////////////// Week 10 //////////////////////////////////////////////////////////////////////////////
 
 void demo_polymorphism() {
   std::cout << "10: Polymorphism - Virtual functions\n";
