@@ -18,9 +18,6 @@
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
 
-/*
-#include ""
-*/
 
 ////////////////////////////////////////////////////////////////////////////
 /// Week 1
@@ -37,9 +34,7 @@ void demo_essentials() {
          "builder.\n";
 }
 
-////////////////////////////////////////////////////////////////////////////
-/// Week 2
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////// Week 2 //////////////////////////////////////////////////////////////////////////////
 // This week covers the basics of c++ coding that the students covered in the
 // previous semester
 
@@ -51,11 +46,7 @@ void demo_essentials() {
 
 void demo_basicsReview() {
   std::cout << "2: Basics Review - Programming Concepts\n";
-  std::cout
-      << "\nDuring this week, we covered the basics of c++ coding that the "
-         "students covered in the previous semester. This included topics like "
-         "        . In order to show a prime example of these topics I have "
-         "programmed a meal price calculator (notes seen in code):\n\n";
+  // During this week, we covered the basics of c++ coding that the students covered in the previous semester. This included topics like. In order to show a prime example of these topics I have programmed a meal price calculator. Notes seen in code.
 
   // Meal Price Calculator
 
@@ -77,18 +68,7 @@ void demo_basicsReview() {
 
 void demo_flowControl() {
   std::cout << "3: Flow control and data aggregates\n";
-  std::cout
-      << "During this week we covered flow control and data aggregates. We "
-         "learned how to control the flow of the program (finishing up this "
-         "topic from last week), and mostly about the if, else and switch "
-         "statements. These statements are used to control the conditions and "
-         "path of the running program. We also looked into bitwise operators . "
-         "The class also covered vectors   .   The coding example below for "
-         "this week is a bitwise calculation program meant to gather possible "
-         "comparison values from two integers inputted by the user. This uses "
-         "the bitwise values of the numbers below these and compare them. This "
-         "is referenced from my work on HackerRank (Again, the notes are in "
-         "the code):\n";
+ //During this week we covered flow control and data aggregates. We learned how to control the flow of the program (finishing up this topic from last week), and mostly about the if, else and switch statements. These statements are used to control the conditions and path of the running program. We also looked into bitwise operators. The class also covered vectors. The coding example below for this week is a bitwise calculation program meant to gather possible comparison values from two integers inputted by the user. This uses the bitwise values of the numbers below these and compare them. This is referenced from my work on HackerRank. Again, the notes are in the code.
 
   std::cout << "\nPlease insert the highest number to consider: ";
   int max_of_set;  // n
@@ -156,8 +136,8 @@ void demo_flowControl() {
 
 void demo_pointer() {
   std::cout << "4: Pointers, functions, and memory - Parameter passing, "
-               "dereferencing\n";
-  std::cout << "\n";
+               "dereferencing\n\n";
+
 
   ///////////// Parameter passing
   std::cout << "The first topic we will cover will be passing parameters. This "
@@ -166,7 +146,7 @@ void demo_pointer() {
   // Parameters: passing by value
   demonstrate_functions();
 
-  // Mention new topic
+  std::cout << "Demonstrate default parameters, inline functions, and overloaded functions\n";
 
   demonstrate_more_function_stuff();
 
@@ -183,12 +163,7 @@ void demo_pointer() {
 
 void demo_array() {
   std::cout << "5: Data - Arrays of pointers and Conversion - Strings intro\n";
-  std::cout
-      << "This week we mainly started the use of objects, specifically "
-         "focusing on fields, methods, and overall properties of classes. The "
-         "example code is based off of an example from cplusplus.com and their "
-         "tutorial on classes, with some adjustments to cover the topics in "
-         "class. (The actual notes are in the code): \n\n";
+  // This week we mainly started the use of objects, specifically focusing on fields, methods, and overall properties of classes. The example code is based off of an example from cplusplus.com and their tutorial on classes, with some adjustments to cover the topics in class.;
 
   // A class is kind of like a blueprint or a cookie cutter (not exactly an
   // existing object). These are the instructions for creating an object with
@@ -216,7 +191,7 @@ void demo_array() {
 ///////////////////////////////////////////////////////////////////////////////
 
 void demo_data() {
-  std::cout << "6: Data - Strings as objects, namespaces, exceptions\n";
+  std::cout << "6: Data - Strings as objects, namespaces, exceptions\n\n";
   // This week we covered
 
   // this is the code from cplusplus's tutorial on files we used them in class
@@ -231,14 +206,14 @@ void demo_data() {
 /////////////////////////////////////////////////////////////////////////////////
 
 void demo_modularity() {
-  std::cout << "7: The essentials of OOP - Modularity (classes and packages)\n";
+  std::cout << "7: The essentials of OOP - Modularity (classes and packages)\n\n";
 
   // This is an example from edube c++ tutorial
-  std::cout << "This is an example of a stack using procedural programming.\n";
+  std::cout << "This is an example of a stack using procedural programming.\n\n";
   procedural_stack_demo();
 
-  std::cout << "This is an example of a stack using object oriented based "
-               "programming\n";
+  std::cout << "\nThis is an example of a stack using object oriented based "
+               "programming\n\n";
   object_oriented_stack();
 
   // LO4. Include a comment in which you compare and contrast the
@@ -284,7 +259,7 @@ void demo_modularity() {
 ////////////////////////////////////////////////////////////////////////////////
 
 void demo_encapsulation() {
-  std::cout << "8: The essentials of OOP - Encapsulation\n";
+  std::cout << "8: The essentials of OOP - Encapsulation\n\n";
 
   std::cout << " This program will post a predetermined date in the "
                "Year/Month/Day format:\n\n";
@@ -350,7 +325,7 @@ void demo_inheritance() {
 /////////////////////////////////////////////////////////////////////////////////
 
 void demo_polymorphism() {
-  std::cout << "10: Polymorphism - Virtual functions\n";
+  std::cout << "10: Polymorphism - Virtual functions\n\n";
 
   // This program is based off of professor Vanselow's code from our class on
   // polymorphism
@@ -409,7 +384,7 @@ void demo_polymorphism() {
 ////////////////////////////////////////////////////////////////////////////////
 
 void demo_exception() {
-  std::cout << "11: Exceptions - Error handling\n";
+  std::cout << "11: Exceptions - Error handling\n\n";
 
   // This is an example of an exception that professor Vanselow covered in class
 
@@ -442,7 +417,14 @@ void demo_exception() {
 
 //////////////////////////////////////////////////////////////////// Week 12 ////////////////////////////////////////////////////////////////////////////////
 
-void demo_generics() { std::cout << "12: Generics/Templates\n"; }
+void demo_generics() { 
+    std::cout << "12: Generics/Templates\n\n"; 
+
+
+
+
+
+}
 
 //////////////////////////////////////////////////////////////////// Week 13 ///////////////////////////////////////////////////////////////////////////////
 
