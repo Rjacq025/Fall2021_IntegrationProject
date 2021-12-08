@@ -8,6 +8,7 @@
 
 // LO6. Use object-oriented encapsulation mechanisms such as interfaces and
 // private members. [Usage]
+// LO1a. At least one class in a header file with non-trivial methods implemented in a cpp file
 class Date_8 {
  private:
   int m_year;
