@@ -145,14 +145,20 @@
   <ItemGroup>
     <ClCompile Include="Date_8.cpp" />
     <ClCompile Include="Fall2021_IntegrationProject.cpp" />
+    <ClCompile Include="FireFighter_10.cpp" />
     <ClCompile Include="GenericsTemplates_12.cpp" />
+    <ClCompile Include="MailPerson_10.cpp" />
+    <ClCompile Include="Person_10.cpp" />
     <ClCompile Include="StringsAsObjNspcEx_6.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArraysofPointConv_5.h" />
     <ClInclude Include="BasicsReview_2.h" />
+    <ClInclude Include="FireFighter_10.h" />
     <ClInclude Include="GenericsTemplates_12.h" />
     <ClInclude Include="Date_8.h" />
+    <ClInclude Include="MailPerson_10.h" />
+    <ClInclude Include="Person_10.h" />
     <ClInclude Include="Inheritance_9.h" />
     <ClInclude Include="OOPModularity_7.h" />
     <ClInclude Include="PointFunctMem_4.h" />

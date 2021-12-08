@@ -11,6 +11,9 @@
 #include "OOPModularity_7.h"
 #include "Date_8.h"
 #include "Inheritance_9.h"
+#include "Person_10.h"
+#include "MailPerson_10.h"
+#include "FireFighter_10.h"
 
 
 
@@ -267,9 +270,6 @@ void demo_inheritance() {
     eqr.triangle();
 
 
-
-
-
     // LO2a. Include comments describing the visibility inheritance model
     //
     // Inheritance
@@ -315,21 +315,90 @@ void demo_inheritance() {
 
 void demo_polymorphism() {
   std::cout << "10: Polymorphism - Virtual functions\n";
+
+  // This program is based off of professor Vanselow's code from our class on polymorphism
+
+  Person_10 ryan;
+  // std::cout << ryan << std::endl;
+  std::cout << ryan.drive() << std::endl;
+  MailPerson_10 aiden;
+  std::cout << aiden.drive() << std::endl;
+  FireFighter_10 jairo;
+  std::cout << jairo.drive() << std::endl;
+
+  Person_10* regularPerson = new Person_10;
+  std::cout << regularPerson->drive() << std::endl;  
+  // -> is called the arrow operator. 
+  // To access members of a structure, use the dot operator. To access members of a structure through a pointer, use the arrow operator.
+
+  std::cout << regularPerson->get_older() << std::endl;
+
+  // polymorphism
+  Person_10* jobUnknown = NULL;
+  std::cout << "Enter the job. 1 for MailPerson, 2 for FireFighter" << std::endl;
+  int job_code;
+  std::cin >> job_code;
+  if (job_code == 1) {
+      jobUnknown = new MailPerson_10;
+  }
+  if (job_code == 2) {
+    jobUnknown = new FireFighter_10;
+  }
+  
+  // std::cout << static_cast<MailPerson_10 *>(jobUnkown)->drive() << std::endl;        //the pointer points to a different class/data type here
+  std::cout << jobUnknown->drive() << std::endl;
+  std::cout << jobUnknown->get_older() << std::endl;
+  // std::cout << jobUnknown << std::endl;
+
+  // LO3. Correctly reason about control flow in a program using dynamic dispatch. [Usage]
+  // Dynamic dispatch takes place here, this is the process of selecting which implemenation of a polymorphic method (subclass method) to call.
+  // Late binding is function call that is resolved during runtime. The compiler creates the type of object during runtime and then binds the funtion call to the object.
+  // without the use of "virtual" or a static cast its impossible to known which code to go to whenever drive() is full.  
+  
+  // LO5. Explain the relationship between object - oriented inheritance(code - sharing and overriding) and subtyping(the idea of a subtype being usable in a context that expects the supertype).[Familiarity]
+  // A function call on a base class type can go to the derived implementation. in c++ that is throught the key word "virtual"
+
 }
 
-// Week 11
+//////////////////////////////////////////////////////////////////// Week 11 /////////////////////////////////////////////////////////////////////////////
 
-void demo_exception() { std::cout << "11: Exceptions - Error handling\n"; }
+void demo_exception() { 
+    std::cout << "11: Exceptions - Error handling\n"; 
 
-// Week 12
 
-void demo_generics() { std::cout << "12: Generics/Templates\n"; }
 
-// Week 13
 
-void demo_operators() { std::cout << "13: Operators - Pointer Arithmetic\n"; }
 
-// Week 14
+
+
+
+
+
+}
+
+//////////////////////////////////////////////////////////////////// Week 12 /////////////////////////////////////////////////////////////////////////////
+
+void demo_generics() { 
+    std::cout << "12: Generics/Templates\n"; 
+
+
+
+
+
+
+}
+
+//////////////////////////////////////////////////////////////////// Week 13 ////////////////////////////////////////////////////////////////////////////
+
+void demo_operators() { 
+    std::cout << "13: Operators - Pointer Arithmetic\n"; 
+
+
+    // LO7. Define and use iterators and other operations on aggregates, including operations that take functions as arguments. [Usage]
+
+}
+
+//////////////////////////////////////////////////////////////////// Week 14 ////////////////////////////////////////////////////////////////////////////
 
 void demo_enueratedTypes() { 
     std::cout << "14: Enumerated Types\n"; 

@@ -27,6 +27,15 @@
     <ClCompile Include="Date_8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Person_10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MailPerson_10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FireFighter_10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicsReview_2.h">
@@ -51,6 +60,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Inheritance_9.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person_10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MailPerson_10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FireFighter_10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
