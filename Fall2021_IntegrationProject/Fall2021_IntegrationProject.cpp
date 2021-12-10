@@ -17,6 +17,7 @@
 #include "Person_10.h"
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
+#include "Continue.h"
 
 
 ////////////////////////////////////////////////////////////////////////////
@@ -32,6 +33,8 @@ void demo_essentials() {
          "is a software application that usually consists of a code editor, a "
          "compiler, a debugger, and a graphical user interface (GUI) "
          "builder.\n";
+
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////////////// Week 2 //////////////////////////////////////////////////////////////////////////////
@@ -61,6 +64,9 @@ void demo_basicsReview() {
       calc_total_meal_price(meal_price);  // function call (argument)
 
   std::cout << "Total Price: " << total_price << "\n";
+
+
+  continue_program_function();
 }
 
 ///////////////////////////////////////////////////////////////////// Week 3
@@ -129,6 +135,9 @@ void demo_flowControl() {
   // return multiiple values by wrapping them in a class or struct. Personal
   // Note: I'm not making this into a struct or a class so I'm not using a
   // header for this week.
+
+
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 4
@@ -156,6 +165,8 @@ void demo_pointer() {
   // here's the link:
   // Go to time 1:32:56
   // https://eaglefgcu.sharepoint.com/sites/COP3003Fall2021798/Shared%20Documents/Forms/AllItems.aspx?isAscending=true&sortField=Modified&id=%2Fsites%2FCOP3003Fall2021798%2FShared%20Documents%2FClass%20Meetings%2FRecordings%2FClass%20Meetings%2D20210920%5F163837%2DMeeting%20Recording%2Emp4&parent=%2Fsites%2FCOP3003Fall2021798%2FShared%20Documents%2FClass%20Meetings%2FRecordings
+
+  continue_program_function();
 }
 
 ///////////////////////////////////////////////////////////////////// Week 5
@@ -185,6 +196,8 @@ void demo_array() {
   std::cout << "width: " << rect.get_width() << "\n";
   std::cout << "height: " << rect.get_height() << "\n";
   std::cout << "area: " << rect.area() << "\n";
+
+  continue_program_function();
 }
 
 ///////////////////////////////////////////////////////////////////// Week 6
@@ -200,6 +213,8 @@ void demo_data() {
 
   // The result from this is coming from a saved file
   demo_read_from_file();
+
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 7
@@ -253,6 +268,8 @@ void demo_modularity() {
   //
   //  Procedural programming is based on the unreal world, whereas OOP is based
   //  on the real world
+
+  continue_program_function();
 }
 
 ///////////////////////////////////////////////////////////////////// Week 8
@@ -268,6 +285,8 @@ void demo_encapsulation() {
   Date_8 my_date(2011, 10, 12);  // makes an object
   std::cout << my_date.getYear() << " / " << my_date.getMonth() << " / "
             << my_date.getDay() << std::endl;
+
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 9
@@ -319,6 +338,7 @@ void demo_inheritance() {
   //
   //
   //
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 10
@@ -378,6 +398,8 @@ void demo_polymorphism() {
   // a context that expects the supertype).[Familiarity] A function call on a
   // base class type can go to the derived implementation. in c++ that is
   // throught the key word "virtual"
+
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 11
@@ -413,6 +435,8 @@ void demo_exception() {
     std::cout << "Caught all you" << std::endl;
   }
   // std::cout << num1 << std::endl; // out of scope
+
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 12 ////////////////////////////////////////////////////////////////////////////////
@@ -423,7 +447,7 @@ void demo_generics() {
 
 
 
-
+    continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 13 ///////////////////////////////////////////////////////////////////////////////
@@ -433,6 +457,9 @@ void demo_operators() {
 
   // LO7. Define and use iterators and other operations on aggregates, including
   // operations that take functions as arguments. [Usage]
+
+
+  continue_program_function();
 }
 
 //////////////////////////////////////////////////////////////////// Week 14 ///////////////////////////////////////////////////////////////////////////////
@@ -452,6 +479,13 @@ void demo_enueratedTypes() {
   // edube example
 
   // Incrementing and decrementing an enumerator
+
+
+
+
+
+
+  continue_program_function();
 }
 
 // Week 15
@@ -459,9 +493,23 @@ void demo_enueratedTypes() {
 void demo_wrapUp() {
   std::cout << "15: Wrap Up\n";
 
+
+
+
+
+
+
+
+
+
   // put the LO number for each point you covered in your code
   // clean up your project
   // https://sites.google.com/site/profvanselow/course/cop-3003/projects-3003
+
+
+
+
+  continue_program_function();
 }
 
 int main() {
