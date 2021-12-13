@@ -18,6 +18,8 @@
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
 #include "Continue.h"
+#include "GenericsTemplates_12.h"
+#include "OperatorOverload_13.h"
 
 
 ////////////////////////////////////////////////////////////////////////////
@@ -443,9 +445,20 @@ void demo_exception() {
 
 void demo_generics() { 
     std::cout << "12: Generics/Templates\n\n"; 
+    // this is based off of code we completed in Professor Vanselows class
+
+   // Templates carry over data types contaainer stores multiple datatypes like vectors or arrays
+    demonstrate_template();
+
+   // Working on templates/auto is essentially the easier version of this code:
+   // add_nums for ints only
+   // int add_nums (int num1, int int2) { return num1 + int2; }
+
+   // add_nums for doubles only using overloading
+   // double add_nums(double num1, double int2) { return num1 + int2; }
 
 
-
+    // don't forget L0 7
 
     continue_program_function();
 }
@@ -455,8 +468,19 @@ void demo_generics() {
 void demo_operators() {
   std::cout << "13: Operators - Pointer Arithmetic\n";
 
-  // LO7. Define and use iterators and other operations on aggregates, including
-  // operations that take functions as arguments. [Usage]
+  // This week primarily covers operator overloading
+  // This example of operator overload is from a hackerRank that we worked on in class
+  // LO1c. Utilize an initialization list
+  Complex x, y;
+  std::string s1, s2;
+  std::cout << "Please input an equation 'a+ib' where a and b are numbers and i is a constant (leave it as i):\n" << std::endl;
+  std::cin >> s1;
+  std::cout << "\nPlease input a second equation\n" << std::endl;
+  std::cin >> s2;
+  x.input(s1);
+  y.input(s2);
+  Complex z = x + y;
+  std::cout << "Adding equations:\n" << z << std::endl;
 
 
   continue_program_function();
@@ -493,24 +517,13 @@ void demo_enueratedTypes() {
 void demo_wrapUp() {
   std::cout << "15: Wrap Up\n";
 
-
-
-
-
-
-
-
-
-
-  // put the LO number for each point you covered in your code
-  // clean up your project
-  // https://sites.google.com/site/profvanselow/course/cop-3003/projects-3003
-
-
-
+  std::cout << "Not much code here, this week we just focused on finishing up our projects" << std::endl;
 
   continue_program_function();
 }
+
+
+
 
 int main() {
   // Introduction for the user and gets their name
@@ -624,3 +637,5 @@ int main() {
 ///////////////////////////////////////////////////// Useful links
 ///////////////////////////////////////////////////////////////
 // https://www.learncpp.com/
+// These are the requirments for this project
+// https://sites.google.com/site/profvanselow/course/cop-3003/projects-3003
