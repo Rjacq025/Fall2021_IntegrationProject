@@ -162,12 +162,32 @@ void demo_pointer() {
 
   demonstrate_more_function_stuff();
 
-  // This part is for me to work on!!!
+  // This part was not necessary for the project but I still wanted to include it!
+  // struct Character
+  // {
+  //    int speed;
+  //    int level;
+  //    int health;
+  // }
+  // 
+  // int main()
+  // {
+  //    struct Character sonic;
+  //    sonic.speed = 9999999;
+  //    soinc.level = 40;
+  //    soinic.health = 10;
+  //    std::cout << "speed = " << sonic.speed << std::endl;
+  //    std::cout << "level = " << sonic.level << std::endl;
+  //    std::cout << "health = " << sonic.health << std::endl;
+  // }
+  // 
   //
-  // ALSO COVER STRUCTS!!!
-  // here's the link:
-  // Go to time 1:32:56
-  // https://eaglefgcu.sharepoint.com/sites/COP3003Fall2021798/Shared%20Documents/Forms/AllItems.aspx?isAscending=true&sortField=Modified&id=%2Fsites%2FCOP3003Fall2021798%2FShared%20Documents%2FClass%20Meetings%2FRecordings%2FClass%20Meetings%2D20210920%5F163837%2DMeeting%20Recording%2Emp4&parent=%2Fsites%2FCOP3003Fall2021798%2FShared%20Documents%2FClass%20Meetings%2FRecordings
+
+
+
+
+
+
 
   continue_program_function();
 }
