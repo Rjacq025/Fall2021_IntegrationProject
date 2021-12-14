@@ -26,6 +26,9 @@ class Complex {
   }
 };
 
+// more often than not the datatype of the operatior has to be the class that you're going to be working with
+// 
+// 
 // Overload operators + and << for the class complex
 //+ should add two complex numbers as (a+ib) + (c+id) = (a+c) + i(b+d)
 //<< should print a complex number in the format "a+ib"

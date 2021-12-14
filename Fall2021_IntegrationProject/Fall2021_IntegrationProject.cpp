@@ -20,6 +20,7 @@
 #include "Continue.h"
 #include "GenericsTemplates_12.h"
 #include "OperatorOverload_13.h"
+#include "Enums_14.h"
 
 
 ////////////////////////////////////////////////////////////////////////////
@@ -495,19 +496,33 @@ void demo_enueratedTypes() {
   // enums don't have methods in c++
   // Don't use ALL_CAPS for enumerators
 
+  // don't have an enum where the objects have the same values (the enumerations become interchangeable), 
+  // it might not be an error in c++ but it is poor coding practice! This should be avoided.
+
+  // Best practice: Don't assign specific values to your enumerators
+
+  // Best practice: Don't assign the same value to two enumerators 
+  // in the same enumeration unless there's a very good reason.
+
+ 
   // Enums are like a class in which all of the objects are predefined
   // Enumerated types are incredibly useful for code documentation and
   // readability purposes when you need to represent a specific, predefined set
   // of states.
 
-  // edube example
-
+  
+  // this program is a quick and easy example we worked on HackerRank in class
   // Incrementing and decrementing an enumerator
 
-
-
-
-
+  int num;
+  std::cout << "\nPlease type a number: \n";
+  std::cin >> num;
+  e f = static_cast<e>(num);
+  std::cout << "1. " << int(f) << std::endl;
+  std::cout << "2. " << int(--f) << std::endl;
+  std::cout << "3. " << int(f) << std::endl;
+  std::cout << "4. " << int(f--) << std::endl;
+  std::cout << "5. " << int(f) << std::endl;
 
   continue_program_function();
 }
