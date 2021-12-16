@@ -1,4 +1,4 @@
-/** @file filename.cpp
+/** @file StringsAsObjNspcEx_6.h
 
  *  @brief Header that houses code for week 6 section
 

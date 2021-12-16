@@ -1,4 +1,4 @@
-/** @file filename.cpp
+/** @file PointFunctMem_4.h
 
  *  @brief Header that houses code for week 4 section
 

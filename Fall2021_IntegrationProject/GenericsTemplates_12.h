@@ -1,4 +1,4 @@
-/** @file filename.cpp
+/** @file GenericsTemplates_12.h
 
  *  @brief Header that houses code for week 12 section
 
