@@ -1,22 +1,21 @@
 /** @file Fall2021_IntegrationProject.cpp
 
- *  @brief Brief description of file.
+ *  @brief Driver class for the project
 
  *
 
- *  Longer description of file.
+ *  Longer description of file: This is the driver class that class that is just
+ being used to run the program. the object class classes where we create objects
 
  *
 
- *  @author Your Name
+ *  @author Richardson Jacques
 
  *  @bug 47 bugs.
 
  */
 
-
-// This is the driver class that class that is just being used to run the
-// program. the object class classes where we create objects.
+// .
 
 #include <math.h>
 
@@ -39,17 +38,14 @@
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
 
-
-
 ////////////////////////////////////////////////////////////////////////////
 /// Week 1
 ////////////////////////////////////////////////////////////////////////////////
 // This week doesn't start with coding
 
-
 /**
- * @brief 
-*/
+ * @brief
+ */
 void demo_essentials() {
   std::cout << "1: Essentials to coding - Course Overview\n";
   std::cout
@@ -422,7 +418,7 @@ void demo_polymorphism() {
   // of a structure through a pointer, use the arrow operator.
 
   std::cout << regularPerson->get_older() << std::endl;
- 
+
   // polymorphism
   Person_10* jobUnknown = nullptr;
   std::cout << "Enter the job. 1 for MailPerson, 2 for FireFighter"
@@ -481,7 +477,7 @@ void demo_exception() {
   // you can also place the function call in an exception in main
   try {
     // const int num1 = 1;
-      
+
     std::cout << num1 / num2;
   } catch (const std::invalid_argument&
                ex) {  // more specific exceptions should be at the top
@@ -493,8 +489,6 @@ void demo_exception() {
     std::cout << "Caught all you" << std::endl;
   }
   // std::cout << num1 << std::endl; // out of scope
-
-  
 }
 
 //////////////////////////////////////////////////////////////////// Week 12

@@ -1,14 +1,15 @@
-/** @file filename.cpp
+/** @file Person_10.cpp
 
- *  @brief Brief description of file.
-
- *
-
- *  Longer description of file.
+ *  @brief class file for the Person class object
 
  *
 
- *  @author Your Name
+ *  Longer description of file: To be honest, I ended up not using this even
+ though it probably would have been more effective if i had.
+
+ *
+
+ *  @author Richardson Jacques
 
  *  @bug No known bugs.
 
