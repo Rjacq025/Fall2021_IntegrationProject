@@ -1,6 +1,6 @@
 /** @file OOPModularity_7.h
 
- *  @brief header file with code for week 7
+ *  @brief Header that houses code for week 7 section
 
  *
 

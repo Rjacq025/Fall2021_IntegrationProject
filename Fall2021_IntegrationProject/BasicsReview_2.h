@@ -1,6 +1,6 @@
 /** @file BasicsReview_2.h
 
- *  @brief Brief description of file.
+ *  @brief Header that houses code for week 2 section
 
  *
 

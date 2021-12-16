@@ -1,6 +1,6 @@
 /** @file filename.cpp
 
- *  @brief Brief description of file.
+ *  @brief Header that houses code for week 13 section
 
  *
 
