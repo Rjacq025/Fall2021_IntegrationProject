@@ -1,4 +1,19 @@
-#pragma once
+/** @file Continue.h
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug No known bugs.
+
+ */
+
 #include <iostream>
 
 std::string continue_program_word;

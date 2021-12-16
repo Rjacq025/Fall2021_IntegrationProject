@@ -1,4 +1,19 @@
-#pragma once
+/** @file filename.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Your Name
+
+ *  @bug 8 bugs.
+
+ */
+
 #include<iostream>
 
 //this is the user made datatype meant to get separate parts of the equation and properly add them together 
@@ -6,7 +21,7 @@
 class Complex {
  public:
   int a, b;
-  void input(std::string s) {
+  void const input(std::string s) noexcept {
     int v1 = 0;
     int i = 0;
     while (s[i] != '+') {
@@ -17,7 +32,7 @@ class Complex {
       i++;
     }
     int v2 = 0;
-    while (i < s.length()) {
+    while (unsigned(i) < s.length()) {
       v2 = v2 * 10 + s[i] - '0';
       i++;
     }
@@ -33,7 +48,7 @@ class Complex {
 //+ should add two complex numbers as (a+ib) + (c+id) = (a+c) + i(b+d)
 //<< should print a complex number in the format "a+ib"
 
-Complex operator+(const Complex& c1, const Complex& c2) {
+const Complex operator+(const Complex& c1, const Complex& c2) noexcept {
   Complex new_c;
   new_c.a = c1.a + c2.a;
   new_c.b = c1.b + c2.b;

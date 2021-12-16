@@ -1,3 +1,19 @@
+/** @file filename.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Your Name
+
+ *  @bug 2 bugs.
+
+ */
+
 #pragma once
 #include<iostream>
 #include<string>
@@ -15,6 +31,6 @@ class Person_10 {
   // It will go down to the 
   // "Final" prevents derived/sub classes from changing the behavior of base/super classes. This goes: datatype header() final {}
 
-  virtual int get_older() { return ++age; } 
+  virtual int const get_older() noexcept { return ++age; } 
 
 };

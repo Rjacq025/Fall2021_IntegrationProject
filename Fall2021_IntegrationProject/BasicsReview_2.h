@@ -1,19 +1,35 @@
+/** @file BasicsReview_2.h
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug 5 bugs.
+
+ */
+
 // Personal Note: headers are useful for storing functions that are to be called
 // on later in the main cpp function
 
-#pragma once
+
 #include <iostream>
 
 // for this function we will actively note down the structure of a
 // function/method as well as how to call one. (This can be done in functions or
 // in "main")
 
-double calc_total_meal_price(double meal_price) {  // header(parameter), void is the return type
+constexpr double calc_total_meal_price(double meal_price) noexcept {  // header(parameter), void is the return type
   // function body
-  double tax = meal_price * .06;
-  double tip = meal_price * .15;
+  const double tax = meal_price * .06;
+  const double tip = meal_price * .15;
 
-  double total_price = meal_price + tax + tip;
+  const double total_price = meal_price + tax + tip;
 
   return total_price;
 

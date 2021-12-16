@@ -18,9 +18,6 @@
     <ClCompile Include="Fall2021_IntegrationProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StringsAsObjNspcEx_6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Date_8.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

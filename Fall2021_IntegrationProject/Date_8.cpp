@@ -1,3 +1,19 @@
+/** @file filename.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Your Name
+
+ *  @bug 2 bugs.
+
+ */
+
 #include "Date_8.h"
 
 // Non-trivial member functions should be defined in a .cpp file that has the same name as the class.

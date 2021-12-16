@@ -1,24 +1,40 @@
-#pragma once
+/** @file filename.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug 5 bugs.
+
+ */
+
 #include <ostream>
 
-enum e { a = 1, b, c, d };
+enum class e { a = 1, b, c, d };
 
 // prefix
-e& operator--(e& x) {
+const e& operator--(e& x) noexcept {
   if (int(x) == 1) {
-    x = d;
+    x = e::d;  // :: is used to access the enum class in contrast to a regular
+               // enum
   } else {
-    x = e(int(x) - 1);
+    x = static_cast<e>(int(x) - 1);
   }
   return x;
 }
 
 // postfix
-e operator--(e& x, int) {
+const e operator--(e& x, int) noexcept {
   if (int(x) == 1) {
-    x = d;
+    x = e::d;
   } else {
-    x = e(int(x) - 1);
+    x = static_cast<e>(int(x) - 1);
   }
   return x;
 }

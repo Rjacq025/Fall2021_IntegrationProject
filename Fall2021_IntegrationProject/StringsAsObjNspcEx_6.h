@@ -1,5 +1,20 @@
-#pragma once
+/** @file filename.cpp
 
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug No known bugs.
+
+ */
+
+#pragma once
 
 // Define namespaces
 

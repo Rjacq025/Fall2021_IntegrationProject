@@ -1,3 +1,20 @@
+/** @file Fall2021_IntegrationProject.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Your Name
+
+ *  @bug 47 bugs.
+
+ */
+
+
 // This is the driver class that class that is just being used to run the
 // program. the object class classes where we create objects.
 
@@ -9,24 +26,30 @@
 
 #include "ArraysofPointConv_5.h"
 #include "BasicsReview_2.h"
+#include "Continue.h"
 #include "Date_8.h"
+#include "Enums_14.h"
 #include "FireFighter_10.h"
+#include "GenericsTemplates_12.h"
 #include "Inheritance_9.h"
 #include "MailPerson_10.h"
 #include "OOPModularity_7.h"
+#include "OperatorOverload_13.h"
 #include "Person_10.h"
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
-#include "Continue.h"
-#include "GenericsTemplates_12.h"
-#include "OperatorOverload_13.h"
-#include "Enums_14.h"
+
 
 
 ////////////////////////////////////////////////////////////////////////////
 /// Week 1
 ////////////////////////////////////////////////////////////////////////////////
 // This week doesn't start with coding
+
+
+/**
+ * @brief 
+*/
 void demo_essentials() {
   std::cout << "1: Essentials to coding - Course Overview\n";
   std::cout
@@ -40,7 +63,9 @@ void demo_essentials() {
   continue_program_function();
 }
 
-//////////////////////////////////////////////////////////////////////////// Week 2 //////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/// Week 2
+/////////////////////////////////////////////////////////////////////////////////
 // This week covers the basics of c++ coding that the students covered in the
 // previous semester
 
@@ -52,7 +77,10 @@ void demo_essentials() {
 
 void demo_basicsReview() {
   std::cout << "2: Basics Review - Programming Concepts\n";
-  // During this week, we covered the basics of c++ coding that the students covered in the previous semester. This included topics like. In order to show a prime example of these topics I have programmed a meal price calculator. Notes seen in code.
+  // During this week, we covered the basics of c++ coding that the students
+  // covered in the previous semester. This included topics like. In order to
+  // show a prime example of these topics I have programmed a meal price
+  // calculator. Notes seen in code.
 
   // Meal Price Calculator
 
@@ -63,11 +91,10 @@ void demo_basicsReview() {
   std::cin >>
       meal_price;  // get number from keyboard and store it in variable x
 
-  double total_price =
+  const double total_price =
       calc_total_meal_price(meal_price);  // function call (argument)
 
   std::cout << "Total Price: " << total_price << "\n";
-
 
   continue_program_function();
 }
@@ -77,15 +104,24 @@ void demo_basicsReview() {
 
 void demo_flowControl() {
   std::cout << "3: Flow control and data aggregates\n";
- //During this week we covered flow control and data aggregates. We learned how to control the flow of the program (finishing up this topic from last week), and mostly about the if, else and switch statements. These statements are used to control the conditions and path of the running program. We also looked into bitwise operators. The class also covered vectors. The coding example below for this week is a bitwise calculation program meant to gather possible comparison values from two integers inputted by the user. This uses the bitwise values of the numbers below these and compare them. This is referenced from my work on HackerRank. Again, the notes are in the code.
+  // During this week we covered flow control and data aggregates. We learned
+  // how to control the flow of the program (finishing up this topic from last
+  // week), and mostly about the if, else and switch statements. These
+  // statements are used to control the conditions and path of the running
+  // program. We also looked into bitwise operators. The class also covered
+  // vectors. The coding example below for this week is a bitwise calculation
+  // program meant to gather possible comparison values from two integers
+  // inputted by the user. This uses the bitwise values of the numbers below
+  // these and compare them. This is referenced from my work on HackerRank.
+  // Again, the notes are in the code.
 
   std::cout << "\nPlease insert the highest number to consider: ";
-  int max_of_set;  // n
+  int max_of_set = 0;  // n
   std::cin >> max_of_set;
 
   std::cout
       << "Please insert a comparison value less than the highest number: ";
-  int limit_of_result_max;  // k
+  int limit_of_result_max = 0;  // k
   std::cin >> limit_of_result_max;
 
   int and_result = 0;
@@ -139,7 +175,6 @@ void demo_flowControl() {
   // Note: I'm not making this into a struct or a class so I'm not using a
   // header for this week.
 
-
   continue_program_function();
 }
 
@@ -150,7 +185,6 @@ void demo_pointer() {
   std::cout << "4: Pointers, functions, and memory - Parameter passing, "
                "dereferencing\n\n";
 
-
   ///////////// Parameter passing
   std::cout << "The first topic we will cover will be passing parameters. This "
                "can be done a couple of different ways\n";
@@ -158,18 +192,19 @@ void demo_pointer() {
   // Parameters: passing by value
   demonstrate_functions();
 
-  std::cout << "Demonstrate default parameters, inline functions, and overloaded functions\n";
+  std::cout << "Demonstrate default parameters, inline functions, and "
+               "overloaded functions\n";
 
   demonstrate_more_function_stuff();
 
-  // This part was not necessary for the project but I still wanted to include it!
-  // struct Character
+  // This part was not necessary for the project but I still wanted to include
+  // it! struct Character
   // {
   //    int speed;
   //    int level;
   //    int health;
   // }
-  // 
+  //
   // int main()
   // {
   //    struct Character sonic;
@@ -180,14 +215,8 @@ void demo_pointer() {
   //    std::cout << "level = " << sonic.level << std::endl;
   //    std::cout << "health = " << sonic.health << std::endl;
   // }
-  // 
   //
-
-
-
-
-
-
+  //
 
   continue_program_function();
 }
@@ -197,7 +226,10 @@ void demo_pointer() {
 
 void demo_array() {
   std::cout << "5: Data - Arrays of pointers and Conversion - Strings intro\n";
-  // This week we mainly started the use of objects, specifically focusing on fields, methods, and overall properties of classes. The example code is based off of an example from cplusplus.com and their tutorial on classes, with some adjustments to cover the topics in class.;
+  // This week we mainly started the use of objects, specifically focusing on
+  // fields, methods, and overall properties of classes. The example code is
+  // based off of an example from cplusplus.com and their tutorial on classes,
+  // with some adjustments to cover the topics in class.;
 
   // A class is kind of like a blueprint or a cookie cutter (not exactly an
   // existing object). These are the instructions for creating an object with
@@ -213,7 +245,7 @@ void demo_array() {
   // instance of a class
 
   // classes example
-  Rectangle rect;
+  Rectangle rect{};
   rect.set_width(3);
   rect.set_height(4);
   std::cout << "width: " << rect.get_width() << "\n";
@@ -244,10 +276,12 @@ void demo_data() {
 /////////////////////////////////////////////////////////////////////////////////
 
 void demo_modularity() {
-  std::cout << "7: The essentials of OOP - Modularity (classes and packages)\n\n";
+  std::cout
+      << "7: The essentials of OOP - Modularity (classes and packages)\n\n";
 
   // This is an example from edube c++ tutorial
-  std::cout << "This is an example of a stack using procedural programming.\n\n";
+  std::cout
+      << "This is an example of a stack using procedural programming.\n\n";
   procedural_stack_demo();
 
   std::cout << "\nThis is an example of a stack using object oriented based "
@@ -388,12 +422,12 @@ void demo_polymorphism() {
   // of a structure through a pointer, use the arrow operator.
 
   std::cout << regularPerson->get_older() << std::endl;
-
+ 
   // polymorphism
-  Person_10* jobUnknown = NULL;
+  Person_10* jobUnknown = nullptr;
   std::cout << "Enter the job. 1 for MailPerson, 2 for FireFighter"
             << std::endl;
-  int job_code;
+  int job_code = 0;
   std::cin >> job_code;
   if (job_code == 1) {
     jobUnknown = new MailPerson_10;
@@ -437,6 +471,7 @@ void demo_exception() {
   // compare it to baseball, if the pitching machine is not delivering any
   // baseballs then how else will the ball get to the batter the ball must be
   // thrown otherwise
+  int num1 = 5;
   int num2 = 0;
   if (num2 == 0) {
     throw std::invalid_argument("");
@@ -445,9 +480,9 @@ void demo_exception() {
   }
   // you can also place the function call in an exception in main
   try {
-    int num1 = 1;
-
-    std::cout << 5 / num2;
+    // const int num1 = 1;
+      
+    std::cout << num1 / num2;
   } catch (const std::invalid_argument&
                ex) {  // more specific exceptions should be at the top
                       // generalized ones at the bottom
@@ -459,42 +494,46 @@ void demo_exception() {
   }
   // std::cout << num1 << std::endl; // out of scope
 
+  
+}
+
+//////////////////////////////////////////////////////////////////// Week 12
+///////////////////////////////////////////////////////////////////////////////////
+
+void demo_generics() {
+  std::cout << "12: Generics/Templates\n\n";
+  // this is based off of code we completed in Professor Vanselows class
+
+  // Templates carry over data types contaainer stores multiple datatypes like
+  // vectors or arrays
+  demonstrate_template();
+
+  // Working on templates/auto is essentially the easier version of this code:
+  // add_nums for ints only
+  // int add_nums (int num1, int int2) { return num1 + int2; }
+
+  // add_nums for doubles only using overloading
+  // double add_nums(double num1, double int2) { return num1 + int2; }
+
+  // don't forget L0 7
+
   continue_program_function();
 }
 
-//////////////////////////////////////////////////////////////////// Week 12 ////////////////////////////////////////////////////////////////////////////////
-
-void demo_generics() { 
-    std::cout << "12: Generics/Templates\n\n"; 
-    // this is based off of code we completed in Professor Vanselows class
-
-   // Templates carry over data types contaainer stores multiple datatypes like vectors or arrays
-    demonstrate_template();
-
-   // Working on templates/auto is essentially the easier version of this code:
-   // add_nums for ints only
-   // int add_nums (int num1, int int2) { return num1 + int2; }
-
-   // add_nums for doubles only using overloading
-   // double add_nums(double num1, double int2) { return num1 + int2; }
-
-
-    // don't forget L0 7
-
-    continue_program_function();
-}
-
-//////////////////////////////////////////////////////////////////// Week 13 ///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////// Week 13
+//////////////////////////////////////////////////////////////////////////////////
 
 void demo_operators() {
   std::cout << "13: Operators - Pointer Arithmetic\n";
 
   // This week primarily covers operator overloading
-  // This example of operator overload is from a hackerRank that we worked on in class
-  // LO1c. Utilize an initialization list
+  // This example of operator overload is from a hackerRank that we worked on in
+  // class LO1c. Utilize an initialization list
   Complex x, y;
   std::string s1, s2;
-  std::cout << "Please input an equation 'a+ib' where a and b are numbers and i is a constant (leave it as i):\n" << std::endl;
+  std::cout << "Please input an equation 'a+ib' where a and b are numbers and "
+               "i is a constant (leave it as i):\n"
+            << std::endl;
   std::cin >> s1;
   std::cout << "\nPlease input a second equation\n" << std::endl;
   std::cin >> s2;
@@ -503,11 +542,11 @@ void demo_operators() {
   Complex z = x + y;
   std::cout << "Adding equations:\n" << z << std::endl;
 
-
   continue_program_function();
 }
 
-//////////////////////////////////////////////////////////////////// Week 14 ///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////// Week 14
+//////////////////////////////////////////////////////////////////////////////////
 
 void demo_enueratedTypes() {
   std::cout << "14: Enumerated Types\n";
@@ -516,33 +555,32 @@ void demo_enueratedTypes() {
   // enums don't have methods in c++
   // Don't use ALL_CAPS for enumerators
 
-  // don't have an enum where the objects have the same values (the enumerations become interchangeable), 
-  // it might not be an error in c++ but it is poor coding practice! This should be avoided.
+  // don't have an enum where the objects have the same values (the enumerations
+  // become interchangeable), it might not be an error in c++ but it is poor
+  // coding practice! This should be avoided.
 
   // Best practice: Don't assign specific values to your enumerators
 
-  // Best practice: Don't assign the same value to two enumerators 
+  // Best practice: Don't assign the same value to two enumerators
   // in the same enumeration unless there's a very good reason.
 
- 
   // Enums are like a class in which all of the objects are predefined
   // Enumerated types are incredibly useful for code documentation and
   // readability purposes when you need to represent a specific, predefined set
   // of states.
 
-  
   // this program is a quick and easy example we worked on HackerRank in class
   // Incrementing and decrementing an enumerator
 
-  int num;
+  int num = 0;
   std::cout << "\nPlease type a number: \n";
   std::cin >> num;
   e f = static_cast<e>(num);
-  std::cout << "1. " << int(f) << std::endl;
-  std::cout << "2. " << int(--f) << std::endl;
-  std::cout << "3. " << int(f) << std::endl;
-  std::cout << "4. " << int(f--) << std::endl;
-  std::cout << "5. " << int(f) << std::endl;
+  std::cout << "1. " << static_cast<int>(f) << std::endl;
+  std::cout << "2. " << static_cast<int>(--f) << std::endl;
+  std::cout << "3. " << static_cast<int>(f) << std::endl;
+  std::cout << "4. " << static_cast<int>(f--) << std::endl;
+  std::cout << "5. " << static_cast<int>(f) << std::endl;
 
   continue_program_function();
 }
@@ -552,13 +590,12 @@ void demo_enueratedTypes() {
 void demo_wrapUp() {
   std::cout << "15: Wrap Up\n";
 
-  std::cout << "Not much code here, this week we just focused on finishing up our projects" << std::endl;
+  std::cout << "Not much code here, this week we just focused on finishing up "
+               "our projects"
+            << std::endl;
 
   continue_program_function();
 }
-
-
-
 
 int main() {
   // Introduction for the user and gets their name
@@ -600,7 +637,7 @@ int main() {
     // Switch statement used sort of like a table of contents for the week
     // choices
 
-    int topicChoice;
+    int topicChoice = 0;
     std::cin >> topicChoice;
 
     switch (topicChoice) {
@@ -640,6 +677,7 @@ int main() {
         } catch (const std::exception& ex) {
           std::cout << "Caught in main. " << ex.what() << std::endl;
         }
+        continue_program_function();
         break;
       case 12:
         demo_generics();
@@ -659,6 +697,7 @@ int main() {
       default:
         std::cout << "Try again. Please type in one of the numbers from the "
                      "selection.\n\n";
+        break;
     }
   }
 

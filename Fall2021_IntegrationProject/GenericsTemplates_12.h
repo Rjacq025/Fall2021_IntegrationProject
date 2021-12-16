@@ -1,4 +1,19 @@
-#pragma once
+/** @file filename.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug 10 bugs.
+
+ */
+
 #include <iostream>
 
 
@@ -8,18 +23,14 @@
 
 // in c++ 20 if you use "auto" the compiler figures out the datatype by itself
 //abbreviated function template
-auto add_nums(auto num1, auto num2) {
+const auto add_nums(auto num1, auto num2) noexcept {
   return num1 + num2;
 }
-
-
 
 // You can even use classes(like datatypes) in templates
 class Aiden {
  public:
-  Aiden(){
-
-  };
+  const Aiden() noexcept = default;
 };
 
 
@@ -28,16 +39,16 @@ class Aiden {
 // T represents a blank spot for any type of data type(s)
 
 template <typename T>
-T return_it(T thing) {
+const T return_it(T thing) noexcept {
   return thing;
 }
 
 void demonstrate_template() {
-  int int1 = 1;
-  int int2 = 2;
+  constexpr int int1 = 1;
+  constexpr int int2 = 2;
   std::cout << add_nums(int1, int2) << std::endl;
-  double dbl1 = 1;
-  double dbl2 = 2;
+  constexpr double dbl1 = 1;
+  constexpr double dbl2 = 2;
   std::cout << add_nums(dbl1, dbl2) << std::endl;
   std::string str1 = "1";
   std::string str2 = "2";

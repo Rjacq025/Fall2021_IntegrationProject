@@ -1,3 +1,19 @@
+/** @file filename.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug 3 bugs.
+
+ */
+
 #pragma once
 #ifndef DATE_H
 #define DATE_H
@@ -20,9 +36,9 @@ class Date_8 {
 
   void SetDate(int year, int month, int day);
 
-  int getYear() { return m_year; }
-  int getMonth() { return m_month; }
-  int getDay() { return m_day; }
+  int const getYear() noexcept { return m_year; }
+  int const getMonth() noexcept { return m_month; }
+  int const getDay() noexcept { return m_day; }
 };
 
 #endif

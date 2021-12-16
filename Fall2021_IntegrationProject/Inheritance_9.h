@@ -1,3 +1,19 @@
+/** @file filename.cpp
+
+ *  @brief Brief description of file.
+
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug No known bugs.
+
+ */
+
 #pragma once
 #include <cmath>
 #include <cstdio>

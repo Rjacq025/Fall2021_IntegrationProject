@@ -1,6 +1,20 @@
-#pragma once
+/** @file filename.cpp
 
+ *  @brief Brief description of file.
 
+ *
+
+ *  Longer description of file.
+
+ *
+
+ *  @author Richardson Jacques
+
+ *  @bug 4 bugs.
+
+ */
+
+#include<iostream>
 
 // prototypes
 // used for functions after the main/running function
@@ -10,7 +24,7 @@ void demonstrate_pass_by_address(int*, int*);
 void demonstrate_more_function_stuff();
 void demonstrate_default_parameters();
 void default_parameters(std::string greet, int repeats = 1);
-inline int min(int, int);
+inline int constexpr min(int, int) noexcept;
 void demoOverload();
 void demoOverload(int num1);
 
@@ -165,7 +179,7 @@ void demoOverload(int num1) {
 }
 
 // you don't have to actually type inline in the header
-inline int min(int x, int y)  // example of inline function
+inline int constexpr min(int x, int y) noexcept  // example of inline function
 {                             // short hand version of an if-else statement
   // if x is greater than y return y else return x
   return x < y ? x : y;
