@@ -4,7 +4,9 @@
 
  *
 
- *  Longer description of file.
+ *  Longer description of file: This header displays the use of a template, this
+ is shown by the auto template taking in multiple data types from the
+ demonsrate_template() function.
 
  *
 
@@ -16,23 +18,19 @@
 
 #include <iostream>
 
-
 // Template Prototype (if you ever need it!)
 // Template <typename T>
-//T add_nums(T num1, T num2);
+// T add_nums(T num1, T num2);
 
 // in c++ 20 if you use "auto" the compiler figures out the datatype by itself
-//abbreviated function template
-const auto add_nums(auto num1, auto num2) noexcept {
-  return num1 + num2;
-}
+// abbreviated function template
+const auto add_nums(auto num1, auto num2) noexcept { return num1 + num2; }
 
 // You can even use classes(like datatypes) in templates
 class Aiden {
  public:
   const Aiden() noexcept = default;
 };
-
 
 // Use a single capital letter(starting with T) to name your template types
 // (e.g, T, U, V, etc...)
@@ -53,18 +51,20 @@ void demonstrate_template() {
   std::string str1 = "1";
   std::string str2 = "2";
   std::cout << add_nums(str1, str2) << std::endl;
-  std::cout << add_nums(int1, dbl2) << std::endl; // testing this with different datatypes
+  std::cout << add_nums(int1, dbl2)
+            << std::endl;  // testing this with different datatypes
   Aiden myAiden;
   return_it(myAiden);
   // std::cout << add_nums(myAiden, myAiden) << std::endl;
 }
 
-//template <typename T>
-//T add_nums(T num1, T num2) {
+// template <typename T>
+// T add_nums(T num1, T num2) {
 //  return num1 + num2;
 //}
 
-//What if you want the template to accept different datatypes (int, double) do this instead
+// What if you want the template to accept different datatypes (int, double) do
+// this instead
 
 // Our goal here is to reduce the duplications we don't want two
 // functions doing the same thing we want one
@@ -85,9 +85,8 @@ void demonstrate_template() {
 // function into a function template with each auto parameter becoming an
 // independent template type parameter. this method for creating a function
 // is called an abbreviated function template
-	
+
 // Template classes are ideal for implementing container classes
 
-// you should put all of your template class code in the header file or rename cpp inl
-
-
+// you should put all of your template class code in the header file or rename
+// cpp inl

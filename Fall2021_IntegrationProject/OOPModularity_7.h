@@ -4,9 +4,9 @@
 
  *
 
- *  the code for this week shows a little more behind the creation of a class as
- well as the difference between procedure based programming and object oriented
- programming.
+ *  Longer description of file: the code for this week shows a little more
+ behind the creation of a class as well as the difference between procedure
+ based programming and object oriented programming.
 
  *
 
@@ -43,9 +43,7 @@ class Stack {
   }
 
   void const push(int value) noexcept;
-  int const pop(void) noexcept {
-      return stackstore[--stack_pointer]; 
-  }
+  int const pop(void) noexcept { return stackstore[--stack_pointer]; }
 };
 
 void const Stack::push(int value) noexcept {

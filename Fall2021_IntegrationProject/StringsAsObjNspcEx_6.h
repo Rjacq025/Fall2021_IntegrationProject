@@ -4,7 +4,8 @@
 
  *
 
- *  Longer description of file.
+ *  Longer description of file: This header file show how to save to a computer
+ file and how to read from it via code.
 
  *
 
@@ -14,18 +15,20 @@
 
  */
 
-#pragma once
+// Namespaces: a set of signs (names) that are used to identify and refer to
+// objects of various kinds. A namespace ensures that all of a given set of
+// objects have unique names so that they can be easily identified. kind of like
+// license plates the numbers can be the same but they are on different cars.
 
-// Define namespaces
-
+#include <iostream>
 
 void demo_save_to_file() {
   std::ofstream myfile("example.txt");
   // class object
   // class is kind of like a data type
   // an object is kind of like a variable
-  if (myfile.is_open()) // is_open is a function in
-      // the class aka a method
+  if (myfile.is_open())  // is_open is a function in
+                         // the class aka a method
   {
     myfile << "This is a line.\n";
     myfile << "This is another line.\n";
@@ -35,10 +38,10 @@ void demo_save_to_file() {
     std::cout << "Unable to open file";
 }
 
-//strings are technically a class
+// strings are technically a class
 // line is technically a variable
 void demo_read_from_file() {
-  std::string line; 
+  std::string line;
   std::ifstream myfile("example.txt");
   if (myfile.is_open()) {
     while (std::getline(myfile, line)) {
@@ -49,5 +52,4 @@ void demo_read_from_file() {
 
   else
     std::cout << "Unable to open file";
-
 }

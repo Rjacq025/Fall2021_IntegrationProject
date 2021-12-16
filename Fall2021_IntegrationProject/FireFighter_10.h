@@ -4,7 +4,8 @@
 
  *
 
- *  Longer description of file.
+ *  Longer description of file: This header is used to display polymorphism from
+ the firefighter class through its inheritance of the person class
 
  *
 
@@ -15,10 +16,8 @@
  */
 
 #pragma once
-#include"Person_10.h"
+#include "Person_10.h"
 class FireFighter_10 : public Person_10 {
  public:
-  std::string drive() override { 
-	  return "fast"; 
-  }
+  std::string drive() override { return "fast"; }
 };

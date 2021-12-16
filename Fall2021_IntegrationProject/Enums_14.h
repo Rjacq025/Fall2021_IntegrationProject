@@ -4,7 +4,9 @@
 
  *
 
- *  Longer description of file.
+ *  Longer description of file: This header is meant to contain code that covers
+ enums. This specifically houses operator overloads that changes the value
+ inputed by the user
 
  *
 

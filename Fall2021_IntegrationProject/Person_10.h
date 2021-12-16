@@ -4,7 +4,9 @@
 
  *
 
- *  Longer description of file.
+ *  Longer description of file: This header file is part of week 10's
+ polymorphism. It houses the Person class that is the parent of the Mailperson
+ and FireFighter classes via inheritance.
 
  *
 
@@ -15,9 +17,8 @@
  */
 
 #pragma once
-#include<iostream>
-#include<string>
-
+#include <iostream>
+#include <string>
 
 class Person_10 {
  private:
@@ -26,11 +27,11 @@ class Person_10 {
   std::string dob;
 
  public:
-  virtual std::string drive() { return "normal"; } 
+  virtual std::string drive() { return "normal"; }
   // the keyword virtual is used when a function is intended to be overriden
-  // It will go down to the 
-  // "Final" prevents derived/sub classes from changing the behavior of base/super classes. This goes: datatype header() final {}
+  // It will go down to the
+  // "Final" prevents derived/sub classes from changing the behavior of
+  // base/super classes. This goes: datatype header() final {}
 
-  virtual int const get_older() noexcept { return ++age; } 
-
+  virtual int const get_older() noexcept { return ++age; }
 };

@@ -4,8 +4,9 @@
 
  *
 
- *  This is a header file that contains the main code and descripion of the
- Rectangle class as well as the functionality of getter and setter methods
+ *  Longer description of file: This is a header file that contains the main
+ code and descripion of the Rectangle class as well as the functionality of
+ getter and setter methods
 
  *
 
@@ -44,21 +45,17 @@ class Rectangle {
 // Sets are always going to accecpt the data type of the field, and pass that
 // parameter variable into the fielding
 const void Rectangle::set_width(int x) noexcept {  // accept the parameter
-  width = x;                        // pass it to the field
+  width = x;                                       // pass it to the field
 }
 
-const void Rectangle::set_height(int y) noexcept { 
-	height = y; 
-}
+const void Rectangle::set_height(int y) noexcept { height = y; }
 
 // Gets are always going to have a return type of the field's data type, and
 // don't need anything to do thier job like parameters.
 const int Rectangle::get_width() noexcept { return width; }
 
-const int Rectangle::get_height() noexcept { 
-	return height; 
-}
+const int Rectangle::get_height() noexcept { return height; }
 
-//Personal note: noexcept is used for fucntions that 
+// Personal note: noexcept is used for fucntions that
 
 // this one's for myself

@@ -4,7 +4,9 @@
 
  *
 
- *  Longer description of file.
+ *  Longer description of file: This header contains code that displays the use
+ of inheritance. In this file there are three classes that all inherit from the
+ file one step above the other.
 
  *
 
@@ -15,13 +17,11 @@
  */
 
 #pragma once
+#include <algorithm>
 #include <cmath>
 #include <cstdio>
-#include <vector>
 #include <iostream>
-#include <algorithm>
-
-
+#include <vector>
 
 // LO2. Use subclassing to design simple class hierarchies that allow code to be
 // reused for distinct subclasses. [Usage] This program is an example of
