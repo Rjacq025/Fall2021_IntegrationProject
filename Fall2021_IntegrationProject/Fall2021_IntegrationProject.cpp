@@ -15,8 +15,6 @@
 
  */
 
-// .
-
 #include <math.h>
 
 #include <fstream>
@@ -38,13 +36,22 @@
 #include "PointFunctMem_4.h"
 #include "StringsAsObjNspcEx_6.h"
 
-////////////////////////////////////////////////////////////////////////////
-/// Week 1
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 1 ////////////////////////////////////
+
 // This week doesn't start with coding
 
-/**
- * @brief
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
  */
 void demo_essentials() {
   std::cout << "1: Essentials to coding - Course Overview\n";
@@ -56,12 +63,10 @@ void demo_essentials() {
          "compiler, a debugger, and a graphical user interface (GUI) "
          "builder.\n";
 
-  continue_program_function();
 }
 
-////////////////////////////////////////////////////////////////////////////
-/// Week 2
-/////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 2 ////////////////////////////////////
+
 // This week covers the basics of c++ coding that the students covered in the
 // previous semester
 
@@ -71,6 +76,19 @@ void demo_essentials() {
 
 // not needed when included in .h file
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_basicsReview() {
   std::cout << "2: Basics Review - Programming Concepts\n";
   // During this week, we covered the basics of c++ coding that the students
@@ -92,12 +110,23 @@ void demo_basicsReview() {
 
   std::cout << "Total Price: " << total_price << "\n";
 
-  continue_program_function();
 }
 
-///////////////////////////////////////////////////////////////////// Week 3
-////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 3 ////////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_flowControl() {
   std::cout << "3: Flow control and data aggregates\n";
   // During this week we covered flow control and data aggregates. We learned
@@ -171,12 +200,23 @@ void demo_flowControl() {
   // Note: I'm not making this into a struct or a class so I'm not using a
   // header for this week.
 
-  continue_program_function();
 }
 
-//////////////////////////////////////////////////////////////////// Week 4
-///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 4 ////////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_pointer() {
   std::cout << "4: Pointers, functions, and memory - Parameter passing, "
                "dereferencing\n\n";
@@ -214,12 +254,23 @@ void demo_pointer() {
   //
   //
 
-  continue_program_function();
 }
 
-///////////////////////////////////////////////////////////////////// Week 5
-//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 5 ////////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_array() {
   std::cout << "5: Data - Arrays of pointers and Conversion - Strings intro\n";
   // This week we mainly started the use of objects, specifically focusing on
@@ -248,12 +299,23 @@ void demo_array() {
   std::cout << "height: " << rect.get_height() << "\n";
   std::cout << "area: " << rect.area() << "\n";
 
-  continue_program_function();
 }
 
-///////////////////////////////////////////////////////////////////// Week 6
-///////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 6 ////////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_data() {
   std::cout << "6: Data - Strings as objects, namespaces, exceptions\n\n";
   // This week we covered
@@ -265,12 +327,23 @@ void demo_data() {
   // The result from this is coming from a saved file
   demo_read_from_file();
 
-  continue_program_function();
 }
 
-//////////////////////////////////////////////////////////////////// Week 7
-/////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 7 ////////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_modularity() {
   std::cout
       << "7: The essentials of OOP - Modularity (classes and packages)\n\n";
@@ -322,12 +395,24 @@ void demo_modularity() {
   //  Procedural programming is based on the unreal world, whereas OOP is based
   //  on the real world
 
-  continue_program_function();
+
 }
 
-///////////////////////////////////////////////////////////////////// Week 8
-////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 8 ////////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_encapsulation() {
   std::cout << "8: The essentials of OOP - Encapsulation\n\n";
 
@@ -339,12 +424,23 @@ void demo_encapsulation() {
   std::cout << my_date.getYear() << " / " << my_date.getMonth() << " / "
             << my_date.getDay() << std::endl;
 
-  continue_program_function();
 }
 
-//////////////////////////////////////////////////////////////////// Week 9
-//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////// Week 9 ////////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_inheritance() {
   std::cout << "9: Inheritance - Class hierarchies\n\n";
 
@@ -391,12 +487,24 @@ void demo_inheritance() {
   //
   //
   //
-  continue_program_function();
+  
 }
 
-//////////////////////////////////////////////////////////////////// Week 10
-/////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// Week 10 ///////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_polymorphism() {
   std::cout << "10: Polymorphism - Virtual functions\n\n";
 
@@ -452,12 +560,24 @@ void demo_polymorphism() {
   // base class type can go to the derived implementation. in c++ that is
   // throught the key word "virtual"
 
-  continue_program_function();
+  
 }
 
-//////////////////////////////////////////////////////////////////// Week 11
-////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// Week 11 ///////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_exception() {
   std::cout << "11: Exceptions - Error handling\n\n";
 
@@ -491,9 +611,21 @@ void demo_exception() {
   // std::cout << num1 << std::endl; // out of scope
 }
 
-//////////////////////////////////////////////////////////////////// Week 12
-///////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// Week 12 ///////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_generics() {
   std::cout << "12: Generics/Templates\n\n";
   // this is based off of code we completed in Professor Vanselows class
@@ -511,12 +643,24 @@ void demo_generics() {
 
   // don't forget L0 7
 
-  continue_program_function();
+
 }
 
-//////////////////////////////////////////////////////////////////// Week 13
-//////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// Week 13 ///////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_operators() {
   std::cout << "13: Operators - Pointer Arithmetic\n";
 
@@ -536,12 +680,24 @@ void demo_operators() {
   Complex z = x + y;
   std::cout << "Adding equations:\n" << z << std::endl;
 
-  continue_program_function();
+ 
 }
 
-//////////////////////////////////////////////////////////////////// Week 14
-//////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////// Week 14 ///////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_enueratedTypes() {
   std::cout << "14: Enumerated Types\n";
 
@@ -576,21 +732,47 @@ void demo_enueratedTypes() {
   std::cout << "4. " << static_cast<int>(f--) << std::endl;
   std::cout << "5. " << static_cast<int>(f) << std::endl;
 
-  continue_program_function();
+
 }
 
-// Week 15
+/////////////////////////////////// Week 15 ///////////////////////////////////
 
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 void demo_wrapUp() {
   std::cout << "15: Wrap Up\n";
 
   std::cout << "Not much code here, this week we just focused on finishing up "
                "our projects"
             << std::endl;
-
-  continue_program_function();
 }
 
+///////////////////////////////////// Main /////////////////////////////////////
+
+/** @brief Short description of function.
+
+ *
+
+ *  Longer description of function.
+
+ *
+
+ *  @param One for each parameter with the name and a description
+
+ *  @return The word void or a description of what is returned
+
+ */
 int main() {
   // Introduction for the user and gets their name
   std::cout << "Please enter your name: ";
@@ -637,33 +819,43 @@ int main() {
     switch (topicChoice) {
       case 1:
         demo_essentials();
+        continue_program_function();
         break;
       case 2:
         demo_basicsReview();
+        continue_program_function();
         break;
       case 3:
         demo_flowControl();
+        continue_program_function();
         break;
       case 4:
         demo_pointer();
+        continue_program_function();
         break;
       case 5:
         demo_array();
+        continue_program_function();
         break;
       case 6:
         demo_data();
+        continue_program_function();
         break;
       case 7:
         demo_modularity();
+        continue_program_function();
         break;
       case 8:
         demo_encapsulation();
+        continue_program_function();
         break;
       case 9:
         demo_inheritance();
+        continue_program_function();
         break;
       case 10:
         demo_polymorphism();
+        continue_program_function();
         break;
       case 11:
         try {
@@ -675,15 +867,19 @@ int main() {
         break;
       case 12:
         demo_generics();
+        continue_program_function();
         break;
       case 13:
         demo_operators();
+        continue_program_function();
         break;
       case 14:
         demo_enueratedTypes();
+        continue_program_function();
         break;
       case 15:
         demo_wrapUp();
+        continue_program_function();
         break;
       case 16:
         continue_program = false;
