@@ -1,0 +1,54 @@
+\hypertarget{_generics_templates__12_8h_source}{}\doxysection{Generics\+Templates\+\_\+12.\+h}
+\mbox{\hyperlink{_generics_templates__12_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{// Template Prototype (if you ever need it!)}}
+\DoxyCodeLine{22 \textcolor{comment}{// Template <typename T>}}
+\DoxyCodeLine{23 \textcolor{comment}{// T add\_nums(T num1, T num2);}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{comment}{// in c++ 20 if you use "{}auto"{} the compiler figures out the datatype by itself}}
+\DoxyCodeLine{26 \textcolor{comment}{// abbreviated function template}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{52 \textcolor{keyword}{const} \textcolor{keyword}{auto} \mbox{\hyperlink{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}{add\_nums}}(\textcolor{keyword}{auto} num1, \textcolor{keyword}{auto} num2) \textcolor{keyword}{noexcept} \{ \textcolor{keywordflow}{return} num1 + num2; \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{comment}{// You can even use classes(like datatypes) in templates}}
+\DoxyCodeLine{55 \textcolor{keyword}{class }\mbox{\hyperlink{class_aiden}{Aiden}} \{}
+\DoxyCodeLine{56  \textcolor{keyword}{public}:}
+\DoxyCodeLine{57   \textcolor{keyword}{const} \mbox{\hyperlink{class_aiden}{Aiden}}() \textcolor{keyword}{noexcept} = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{75 \textcolor{keyword}{template} <\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{76 \textcolor{keyword}{const} T \mbox{\hyperlink{_generics_templates__12_8h_a80e1bc04db43b05972b6f89f612c78fd}{return\_it}}(T thing) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{77   \textcolor{keywordflow}{return} thing;}
+\DoxyCodeLine{78 \}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{104 \textcolor{keywordtype}{void} \mbox{\hyperlink{_generics_templates__12_8h_a0b61bd508895bc9f7b1b710d712607c9}{demonstrate\_template}}() \{}
+\DoxyCodeLine{105   \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} int1 = 1;}
+\DoxyCodeLine{106   \textcolor{keyword}{constexpr} \textcolor{keywordtype}{int} int2 = 2;}
+\DoxyCodeLine{107   std::cout << \mbox{\hyperlink{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}{add\_nums}}(int1, int2) << std::endl;}
+\DoxyCodeLine{108   \textcolor{keyword}{constexpr} \textcolor{keywordtype}{double} dbl1 = 1;}
+\DoxyCodeLine{109   \textcolor{keyword}{constexpr} \textcolor{keywordtype}{double} dbl2 = 2;}
+\DoxyCodeLine{110   std::cout << \mbox{\hyperlink{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}{add\_nums}}(dbl1, dbl2) << std::endl;}
+\DoxyCodeLine{111   std::string str1 = \textcolor{stringliteral}{"{}1"{}};}
+\DoxyCodeLine{112   std::string str2 = \textcolor{stringliteral}{"{}2"{}};}
+\DoxyCodeLine{113   std::cout << \mbox{\hyperlink{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}{add\_nums}}(str1, str2) << std::endl;}
+\DoxyCodeLine{114   std::cout << \mbox{\hyperlink{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}{add\_nums}}(int1, dbl2)}
+\DoxyCodeLine{115             << std::endl;  \textcolor{comment}{// testing this with different datatypes}}
+\DoxyCodeLine{116   \mbox{\hyperlink{class_aiden}{Aiden}} myAiden;}
+\DoxyCodeLine{117   \mbox{\hyperlink{_generics_templates__12_8h_a80e1bc04db43b05972b6f89f612c78fd}{return\_it}}(myAiden);}
+\DoxyCodeLine{118   \textcolor{comment}{// std::cout << add\_nums(myAiden, myAiden) << std::endl;}}
+\DoxyCodeLine{119 \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121 \textcolor{comment}{// template <typename T>}}
+\DoxyCodeLine{122 \textcolor{comment}{// T add\_nums(T num1, T num2) \{}}
+\DoxyCodeLine{123 \textcolor{comment}{//  return num1 + num2;}}
+\DoxyCodeLine{124 \textcolor{comment}{//\}}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 \textcolor{comment}{// Template classes are ideal for implementing container classes}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128 \textcolor{comment}{// you should put all of your template class code in the header file or rename}}
+\DoxyCodeLine{129 \textcolor{comment}{// cpp inl}}
+
+\end{DoxyCode}

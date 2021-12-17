@@ -1,0 +1,44 @@
+\hypertarget{_arraysof_point_conv__5_8h_source}{}\doxysection{Arraysof\+Point\+Conv\+\_\+5.\+h}
+\mbox{\hyperlink{_arraysof_point_conv__5_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{// fields and methods of a class are also referred to as members}}
+\DoxyCodeLine{35 \textcolor{comment}{}\textcolor{keyword}{class }\mbox{\hyperlink{class_rectangle}{Rectangle}} \{}
+\DoxyCodeLine{36   \textcolor{comment}{// These are field variables, they represent the}}
+\DoxyCodeLine{37   \textcolor{comment}{// properties/attributes/characteristics of said class or object These are the}}
+\DoxyCodeLine{38   \textcolor{comment}{// properties of a class and contain varialbes The field members are usually}}
+\DoxyCodeLine{39   \textcolor{comment}{// private (no other class can access them)}}
+\DoxyCodeLine{40  \textcolor{keyword}{private}:}
+\DoxyCodeLine{41   \textcolor{keywordtype}{int} width, height;}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43   \textcolor{comment}{// These are the functions/methods they represent the behaviors/verbs of said}}
+\DoxyCodeLine{44   \textcolor{comment}{// object/class These are the behaviors of a class/object and contain}}
+\DoxyCodeLine{45   \textcolor{comment}{// functions The method/function members are usually public (other classes can}}
+\DoxyCodeLine{46   \textcolor{comment}{// access them) Examples of different method/function types include gets and}}
+\DoxyCodeLine{47   \textcolor{comment}{// sets and constructor}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49  \textcolor{keyword}{public}:}
+\DoxyCodeLine{50   \textcolor{keywordtype}{void} \textcolor{keyword}{const} \mbox{\hyperlink{class_rectangle_a5a19bf4d17c4921f7fecbbafc08a1ba4}{set\_width}}(\textcolor{keywordtype}{int} x) \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{51   \textcolor{keywordtype}{void} \textcolor{keyword}{const} \mbox{\hyperlink{class_rectangle_aa0f551445613b46cbb08504d37dd1fcf}{set\_height}}(\textcolor{keywordtype}{int} y) \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{52   \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_rectangle_afe037064853d0030ceaee97804713967}{get\_width}}() \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{53   \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_rectangle_a7bc90fef759e9e6bad9d6ab61db8033c}{get\_height}}() \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{54   \textcolor{keyword}{const} \textcolor{keywordtype}{int} area() \textcolor{keyword}{noexcept} \{ \textcolor{keywordflow}{return} width * height; \}}
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 }
+\DoxyCodeLine{72 \textcolor{keyword}{const} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rectangle_a5a19bf4d17c4921f7fecbbafc08a1ba4}{Rectangle::set\_width}}(\textcolor{keywordtype}{int} x) \textcolor{keyword}{noexcept} \{  \textcolor{comment}{// accept the parameter}}
+\DoxyCodeLine{73   width = x;                                       \textcolor{comment}{// pass it to the field}}
+\DoxyCodeLine{74 \}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{90 \textcolor{keyword}{const} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_rectangle_aa0f551445613b46cbb08504d37dd1fcf}{Rectangle::set\_height}}(\textcolor{keywordtype}{int} y) \textcolor{keyword}{noexcept} \{ height = y; \}}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 }
+\DoxyCodeLine{104 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_rectangle_afe037064853d0030ceaee97804713967}{Rectangle::get\_width}}() noexcept \{ \textcolor{keywordflow}{return} width; \}}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{117 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{class_rectangle_a7bc90fef759e9e6bad9d6ab61db8033c}{Rectangle::get\_height}}() noexcept \{ \textcolor{keywordflow}{return} height; \}}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \textcolor{comment}{// Personal note: noexcept is used for fucntions that don't need to throw any exceptions or errors}}
+
+\end{DoxyCode}

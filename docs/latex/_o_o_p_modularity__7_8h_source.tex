@@ -1,0 +1,79 @@
+\hypertarget{_o_o_p_modularity__7_8h_source}{}\doxysection{OOPModularity\+\_\+7.\+h}
+\mbox{\hyperlink{_o_o_p_modularity__7_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{// LO1. Design and implement a class. [Usage]}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{class }\mbox{\hyperlink{class_stack}{Stack}} \{}
+\DoxyCodeLine{24   \textcolor{comment}{// fields}}
+\DoxyCodeLine{25  \textcolor{keyword}{private}:}
+\DoxyCodeLine{26   \textcolor{keywordtype}{int} stackstore[100];}
+\DoxyCodeLine{27   \textcolor{keywordtype}{int} stack\_pointer\{\};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29   \textcolor{comment}{// methods}}
+\DoxyCodeLine{30  \textcolor{keyword}{public}:}
+\DoxyCodeLine{31   \textcolor{comment}{// This is a constructor.}}
+\DoxyCodeLine{32   \textcolor{comment}{// It is a special method.}}
+\DoxyCodeLine{33   \textcolor{comment}{// no return type}}
+\DoxyCodeLine{34   \textcolor{comment}{// name has to be the same as the class}}
+\DoxyCodeLine{35   \textcolor{comment}{// MUST be public}}
+\DoxyCodeLine{36   \textcolor{comment}{// called automatically when object gets created.}}
+\DoxyCodeLine{37   \textcolor{comment}{// if no constructor is written the compiler makes default}}
+\DoxyCodeLine{38   \textcolor{comment}{// need one when we want code to happen when the object gets created}}
+\DoxyCodeLine{39   \textcolor{comment}{//}}
+\DoxyCodeLine{40   \textcolor{keyword}{const} \mbox{\hyperlink{class_stack}{Stack}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{noexcept} \{ stack\_pointer = 0; \}}
+\DoxyCodeLine{41   \textcolor{comment}{// LO1b. Overload a constructor}}
+\DoxyCodeLine{42   \textcolor{keyword}{const} \mbox{\hyperlink{class_stack}{Stack}}(\textcolor{keywordtype}{int} num) \textcolor{keyword}{noexcept} \{  \textcolor{comment}{// overloaded constructor}}
+\DoxyCodeLine{43     \textcolor{comment}{// stack\_pointer = num; // wouldn't really want to do this}}
+\DoxyCodeLine{44   \}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46   \textcolor{keywordtype}{void} \textcolor{keyword}{const} push(\textcolor{keywordtype}{int} value) \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{47   \textcolor{keywordtype}{int} \textcolor{keyword}{const} pop(\textcolor{keywordtype}{void}) \textcolor{keyword}{noexcept} \{ \textcolor{keywordflow}{return} stackstore[-\/-\/stack\_pointer]; \}}
+\DoxyCodeLine{48 \};}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 \textcolor{keywordtype}{void} \textcolor{keyword}{const} Stack::push(\textcolor{keywordtype}{int} value) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{51   stackstore[stack\_pointer++] = value;}
+\DoxyCodeLine{52 \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{keywordtype}{int} stack[100];  \textcolor{comment}{// global variable, bad because harder to debug}}
+\DoxyCodeLine{55 \textcolor{keywordtype}{int} SP = 0;}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{keywordtype}{void} \textcolor{keyword}{const} push(\textcolor{keywordtype}{int} value) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{58   stack[SP++] = value;  \textcolor{comment}{// increment operator in postfix}}
+\DoxyCodeLine{59 \}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{keywordtype}{int} \textcolor{keyword}{const} pop(\textcolor{keywordtype}{void}) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{62   \textcolor{keywordflow}{return} stack[-\/-\/SP];  \textcolor{comment}{// decrement operator in prefix}}
+\DoxyCodeLine{63 \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65 \textcolor{keywordtype}{void} procedural\_stack\_demo(\textcolor{keywordtype}{void}) \{}
+\DoxyCodeLine{66   push(3);}
+\DoxyCodeLine{67   push(2);}
+\DoxyCodeLine{68   push(1);}
+\DoxyCodeLine{69   std::cout << pop() << std::endl;  \textcolor{comment}{// :: scope resolution operator}}
+\DoxyCodeLine{70   \textcolor{comment}{// SP = -\/4; // being able to do something like this is dangerous and bad}}
+\DoxyCodeLine{71   std::cout << pop() << std::endl;}
+\DoxyCodeLine{72   std::cout << pop() << std::endl;}
+\DoxyCodeLine{73 \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75 \textcolor{comment}{// stacking can most easily be compared to trays stacked on one another. The can}}
+\DoxyCodeLine{76 \textcolor{comment}{// only be accessed one by one and in order respectively. this is shown in a}}
+\DoxyCodeLine{77 \textcolor{comment}{// browser's history. It keeps track of all of the pages you visit in order when}}
+\DoxyCodeLine{78 \textcolor{comment}{// you click the back button. compared to undo/redo in microsoft word}}
+\DoxyCodeLine{79 \textcolor{comment}{//}}
+\DoxyCodeLine{80 \textcolor{comment}{//}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 \textcolor{keywordtype}{void} object\_oriented\_stack() \{}
+\DoxyCodeLine{83   \mbox{\hyperlink{class_stack}{Stack}} little\_stack;   \textcolor{comment}{// creation of a Stack object}}
+\DoxyCodeLine{84   \mbox{\hyperlink{class_stack}{Stack}} another\_stack;  \textcolor{comment}{// call to the constructor}}
+\DoxyCodeLine{85   \mbox{\hyperlink{class_stack}{Stack}} funny\_stack;}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87   little\_stack.push(1);}
+\DoxyCodeLine{88   another\_stack.push(little\_stack.pop() + 1);}
+\DoxyCodeLine{89   funny\_stack.push(another\_stack.pop() + 2);}
+\DoxyCodeLine{90   std::cout << funny\_stack.pop() << std::endl;}
+\DoxyCodeLine{91 \}}
+
+\end{DoxyCode}

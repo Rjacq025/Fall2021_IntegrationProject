@@ -1,0 +1,27 @@
+\hypertarget{_basics_review__2_8h_source}{}\doxysection{Basics\+Review\+\_\+2.\+h}
+\mbox{\hyperlink{_basics_review__2_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{19 \textcolor{comment}{// Personal Note: headers are useful for storing functions that are to be called}}
+\DoxyCodeLine{20 \textcolor{comment}{// on later in the main cpp function}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{40 \textcolor{keyword}{constexpr} \textcolor{keywordtype}{double} \mbox{\hyperlink{_basics_review__2_8h_ac3e50a29b9fab79e3c5598621e5aefdd}{calc\_total\_meal\_price}}(}
+\DoxyCodeLine{41     \textcolor{keywordtype}{double} meal\_price) \textcolor{keyword}{noexcept} \{  \textcolor{comment}{// header(parameter), void is the return type}}
+\DoxyCodeLine{42   \textcolor{comment}{// function body}}
+\DoxyCodeLine{43   \textcolor{keyword}{const} \textcolor{keywordtype}{double} tax = meal\_price * .06;}
+\DoxyCodeLine{44   \textcolor{keyword}{const} \textcolor{keywordtype}{double} tip = meal\_price * .15;}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46   \textcolor{keyword}{const} \textcolor{keywordtype}{double} total\_price = meal\_price + tax + tip;}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48   \textcolor{keywordflow}{return} total\_price;}
+\DoxyCodeLine{49 \}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{comment}{// Personal Note: BE VERY CAREFUL!!!}}
+\DoxyCodeLine{52 \textcolor{comment}{// Having a header file that is included by two different .cpp files will cause}}
+\DoxyCodeLine{53 \textcolor{comment}{// the compiler to fail (making the header run more than once) \#pragma once is a}}
+\DoxyCodeLine{54 \textcolor{comment}{// header guard that keeps this from happening}}
+
+\end{DoxyCode}

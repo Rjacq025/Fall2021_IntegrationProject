@@ -1,0 +1,240 @@
+\hypertarget{_point_funct_mem__4_8h}{}\doxysection{Point\+Funct\+Mem\+\_\+4.\+h File Reference}
+\label{_point_funct_mem__4_8h}\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+
+
+Header that houses code for week 4 section.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_ae23545caa861e6e3e978d28d7845a826}{demonstrate\+\_\+pass\+\_\+by\+\_\+value}} (int num1, int num2)
+\begin{DoxyCompactList}\small\item\em Parameters\+: passing by values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_a46f0b143311aeb895ac12416ced70925}{demonstrate\+\_\+pass\+\_\+by\+\_\+ref}} (int \&num1, int \&num2)
+\begin{DoxyCompactList}\small\item\em Parameters\+: passing by reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_a17bfa9eea7755bad127aa44fa17ecc0e}{demonstrate\+\_\+pass\+\_\+by\+\_\+address}} (int $\ast$num1, int $\ast$num2)
+\begin{DoxyCompactList}\small\item\em Parameters\+: passing by address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_a395bc6c0bffda1346c121ea7b4ff330e}{demonstrate\+\_\+more\+\_\+function\+\_\+stuff}} ()
+\begin{DoxyCompactList}\small\item\em Houses and runs the other three functions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_a4f477d7a38ee006969e5dc09fe6762c8}{demonstrate\+\_\+default\+\_\+parameters}} ()
+\begin{DoxyCompactList}\small\item\em dedault parameters in action \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}{default\+\_\+parameters}} (std\+::string greet, int repeats)
+\begin{DoxyCompactList}\small\item\em Short description of function. \end{DoxyCompactList}\item 
+constexpr int \mbox{\hyperlink{_point_funct_mem__4_8h_a75d620973b06dab59522d112ed9c2f8b}{min}} (int x, int y) noexcept
+\begin{DoxyCompactList}\small\item\em inline function in action \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}{demo\+Overload}} ()
+\begin{DoxyCompactList}\small\item\em Shows how to overload methods without parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_a8f633ba8ce8eabb80427719638b127f6}{demo\+Overload}} (int num1)
+\begin{DoxyCompactList}\small\item\em Shows how to overload methods with parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_point_funct_mem__4_8h_a032e95e994ff22ed71fff927ff1653f8}{demonstrate\+\_\+functions}} ()
+\begin{DoxyCompactList}\small\item\em Houses the parameter passing function calls. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header that houses code for week 4 section. 
+
+Longer description of file\+: This header file has code that displays how to pass parameters by value, reference, and address.
+
+\begin{DoxyAuthor}{Author}
+Richardson Jacques
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000018}{Bug}}]4 bugs.\end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}\label{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!default\_parameters@{default\_parameters}}
+\index{default\_parameters@{default\_parameters}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{default\_parameters()}{default\_parameters()}}
+{\footnotesize\ttfamily void default\+\_\+parameters (\begin{DoxyParamCaption}\item[{std\+::string}]{greet,  }\item[{int}]{repeats }\end{DoxyParamCaption})}
+
+
+
+Short description of function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::string} & greet \\
+\hline
+{\em int} & repeats\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_a4f477d7a38ee006969e5dc09fe6762c8}\label{_point_funct_mem__4_8h_a4f477d7a38ee006969e5dc09fe6762c8}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demonstrate\_default\_parameters@{demonstrate\_default\_parameters}}
+\index{demonstrate\_default\_parameters@{demonstrate\_default\_parameters}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demonstrate\_default\_parameters()}{demonstrate\_default\_parameters()}}
+{\footnotesize\ttfamily void demonstrate\+\_\+default\+\_\+parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+dedault parameters in action 
+
+default parameters is a way to have a varied number of arguments
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_a032e95e994ff22ed71fff927ff1653f8}\label{_point_funct_mem__4_8h_a032e95e994ff22ed71fff927ff1653f8}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demonstrate\_functions@{demonstrate\_functions}}
+\index{demonstrate\_functions@{demonstrate\_functions}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demonstrate\_functions()}{demonstrate\_functions()}}
+{\footnotesize\ttfamily void demonstrate\+\_\+functions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Houses the parameter passing function calls. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_a395bc6c0bffda1346c121ea7b4ff330e}\label{_point_funct_mem__4_8h_a395bc6c0bffda1346c121ea7b4ff330e}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demonstrate\_more\_function\_stuff@{demonstrate\_more\_function\_stuff}}
+\index{demonstrate\_more\_function\_stuff@{demonstrate\_more\_function\_stuff}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demonstrate\_more\_function\_stuff()}{demonstrate\_more\_function\_stuff()}}
+{\footnotesize\ttfamily void demonstrate\+\_\+more\+\_\+function\+\_\+stuff (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Houses and runs the other three functions. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_a17bfa9eea7755bad127aa44fa17ecc0e}\label{_point_funct_mem__4_8h_a17bfa9eea7755bad127aa44fa17ecc0e}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demonstrate\_pass\_by\_address@{demonstrate\_pass\_by\_address}}
+\index{demonstrate\_pass\_by\_address@{demonstrate\_pass\_by\_address}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demonstrate\_pass\_by\_address()}{demonstrate\_pass\_by\_address()}}
+{\footnotesize\ttfamily void demonstrate\+\_\+pass\+\_\+by\+\_\+address (\begin{DoxyParamCaption}\item[{int $\ast$}]{num1,  }\item[{int $\ast$}]{num2 }\end{DoxyParamCaption})}
+
+
+
+Parameters\+: passing by address. 
+
+num1 and num2 in demonstrate\+\_\+pass\+\_\+by\+\_\+address are not values but are addresses so we need to use the dereferencer to access the actual num1 and num2 values from demonstrate\+\_\+functions \char`\"{}$\ast$num1\char`\"{} and \char`\"{}$\ast$num2\char`\"{} this applies to all uses of said variable in a function being used for pointers including cout.
+
+The three pointer rules 1) Pointer and pointee are separate -\/ don\textquotesingle{}t forget to set up the pointee 2) Dereference a pointer to access its pointee. (this only works if there is a pointee!) 3) Assignment (=) between pointers makes them point to the same pointee.
+
+locations in memory (variable) have an actual address, kind of like a post office and you want to reserve a post office box that box is going to have a number this is how you know which box you are using among all the other boxes (look at the address number). hexidecimal code is commonly used for addresses like 0x\+F23D
+
+When we pass by address, what happens is that we\textquotesingle{}re sending the address and that is what\textquotesingle{}s being stored in the parameter. In order to identify that we want to pass an address instead of a value we use an ampersand \char`\"{}\&\char`\"{} You will have to use this in the header of the method call parameters of this function. We\textquotesingle{}re sending an address, we\textquotesingle{}re recieving something that can point back to that address. but in order to access the actual value from the address you need use the dereferencer \char`\"{}$\ast$\char`\"{}
+
+the benefit of passing by address is to change the actual value of the calling function itself save memory space (esspecially if you are passing something that takes up a lot of space like an object, array, or struct) This also allows you to return multiple values from a function when you pass by reference or address.
+
+
+\begin{DoxyParams}{Parameters}
+{\em int$\ast$} & num1 \\
+\hline
+{\em int$\ast$} & num2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_a46f0b143311aeb895ac12416ced70925}\label{_point_funct_mem__4_8h_a46f0b143311aeb895ac12416ced70925}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demonstrate\_pass\_by\_ref@{demonstrate\_pass\_by\_ref}}
+\index{demonstrate\_pass\_by\_ref@{demonstrate\_pass\_by\_ref}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demonstrate\_pass\_by\_ref()}{demonstrate\_pass\_by\_ref()}}
+{\footnotesize\ttfamily void demonstrate\+\_\+pass\+\_\+by\+\_\+ref (\begin{DoxyParamCaption}\item[{int \&}]{num1,  }\item[{int \&}]{num2 }\end{DoxyParamCaption})}
+
+
+
+Parameters\+: passing by reference. 
+
+Instead of passing a copy of the values (pass by value), whe we do pass by ref we can think of it as a new location in memory is holding a reference to the original num1 and num2 the num1 and num2 of demonstrate\+\_\+pass\+\_\+by\+\_\+ref is pointing back to the original \mbox{\hyperlink{_point_funct_mem__4_8h_a032e95e994ff22ed71fff927ff1653f8}{demonstrate\+\_\+functions()}} num1 and num2 respectively. There isn\textquotesingle{}t an actual value in demonstrate\+\_\+pass\+\_\+by\+\_\+ref num1 and num2 just a reference.
+
+Whatever word you use for the parameter in demonstrate\+\_\+pass\+\_\+by\+\_\+ref is whats being used to reference the other location in memory (variable) you don\textquotesingle{}t actually need the same name, just the correct data types
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\&} & num1 \\
+\hline
+{\em int\&} & num2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_ae23545caa861e6e3e978d28d7845a826}\label{_point_funct_mem__4_8h_ae23545caa861e6e3e978d28d7845a826}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demonstrate\_pass\_by\_value@{demonstrate\_pass\_by\_value}}
+\index{demonstrate\_pass\_by\_value@{demonstrate\_pass\_by\_value}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demonstrate\_pass\_by\_value()}{demonstrate\_pass\_by\_value()}}
+{\footnotesize\ttfamily void demonstrate\+\_\+pass\+\_\+by\+\_\+value (\begin{DoxyParamCaption}\item[{int}]{num1,  }\item[{int}]{num2 }\end{DoxyParamCaption})}
+
+
+
+Parameters\+: passing by values. 
+
+This is passing by value what happens here is a new memory location gets created by the parameters, that is a variable declaration, when these values get passed in parenthesis, copies of these values go into the new memory location
+
+So in demonstrate\+\_\+pass\+\_\+by\+\_\+value, when you reassign num1 and num2, you change the value of the new (copied) variables
+
+Personal Note\+: think of a diagram with two function boxes each with the same num1 and num2 values
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & num1 \\
+\hline
+{\em int} & num2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}\label{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demoOverload@{demoOverload}}
+\index{demoOverload@{demoOverload}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demoOverload()}{demoOverload()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void demo\+Overload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shows how to overload methods without parameters. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_a8f633ba8ce8eabb80427719638b127f6}\label{_point_funct_mem__4_8h_a8f633ba8ce8eabb80427719638b127f6}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!demoOverload@{demoOverload}}
+\index{demoOverload@{demoOverload}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{demoOverload()}{demoOverload()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void demo\+Overload (\begin{DoxyParamCaption}\item[{int}]{num1 }\end{DoxyParamCaption})}
+
+
+
+Shows how to overload methods with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & num1\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_point_funct_mem__4_8h_a75d620973b06dab59522d112ed9c2f8b}\label{_point_funct_mem__4_8h_a75d620973b06dab59522d112ed9c2f8b}} 
+\index{PointFunctMem\_4.h@{PointFunctMem\_4.h}!min@{min}}
+\index{min@{min}!PointFunctMem\_4.h@{PointFunctMem\_4.h}}
+\doxysubsubsection{\texorpdfstring{min()}{min()}}
+{\footnotesize\ttfamily constexpr int min (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [constexpr]}, {\ttfamily [noexcept]}}
+
+
+
+inline function in action 
+
+short hand version of an if-\/else statement\+: if x is greater than y return y else return x
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & x \\
+\hline
+{\em int} & y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x \texorpdfstring{$<$}{<} y ? x \+: y; 
+\end{DoxyReturn}

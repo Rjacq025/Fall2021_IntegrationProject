@@ -1,0 +1,105 @@
+\hypertarget{_generics_templates__12_8h}{}\doxysection{Generics\+Templates\+\_\+12.\+h File Reference}
+\label{_generics_templates__12_8h}\index{GenericsTemplates\_12.h@{GenericsTemplates\_12.h}}
+
+
+Header that houses code for week 12 section.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_aiden}{Aiden}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const auto \mbox{\hyperlink{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}{add\+\_\+nums}} (auto num1, auto num2) noexcept
+\begin{DoxyCompactList}\small\item\em auto function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\const T \mbox{\hyperlink{_generics_templates__12_8h_a80e1bc04db43b05972b6f89f612c78fd}{return\+\_\+it}} (T thing) noexcept
+\begin{DoxyCompactList}\small\item\em Short description of function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_generics_templates__12_8h_a0b61bd508895bc9f7b1b710d712607c9}{demonstrate\+\_\+template}} ()
+\begin{DoxyCompactList}\small\item\em Implementation of templates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header that houses code for week 12 section. 
+
+Longer description of file\+: This header displays the use of a template, this is shown by the auto template taking in multiple data types from the demonsrate\+\_\+template() function.
+
+\begin{DoxyAuthor}{Author}
+Richardson Jacques
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000010}{Bug}}]10 bugs.\end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}\label{_generics_templates__12_8h_a9580b81a8f9de61ecc0fc11452626838}} 
+\index{GenericsTemplates\_12.h@{GenericsTemplates\_12.h}!add\_nums@{add\_nums}}
+\index{add\_nums@{add\_nums}!GenericsTemplates\_12.h@{GenericsTemplates\_12.h}}
+\doxysubsubsection{\texorpdfstring{add\_nums()}{add\_nums()}}
+{\footnotesize\ttfamily const auto add\+\_\+nums (\begin{DoxyParamCaption}\item[{auto}]{num1,  }\item[{auto}]{num2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+auto function 
+
+Longer description of function\+: What if you want the template to accept different datatypes (int, double) do this instead
+
+auto keyword (C++ 20) When the auto keyword is used as a parameter type in a normal function, the compiler will auto matically convert the function into a function template with each auto parameter becoming an independent template type parameter. this method for creating a function is called an abbreviated function template
+
+
+\begin{DoxyParams}{Parameters}
+{\em auto} & num1\+: variable that is going to be paired with a variety of different datatypes \\
+\hline
+{\em auto} & num2\+: variable that is going to be paired with a variety of different datatypes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+num1 + num2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_generics_templates__12_8h_a0b61bd508895bc9f7b1b710d712607c9}\label{_generics_templates__12_8h_a0b61bd508895bc9f7b1b710d712607c9}} 
+\index{GenericsTemplates\_12.h@{GenericsTemplates\_12.h}!demonstrate\_template@{demonstrate\_template}}
+\index{demonstrate\_template@{demonstrate\_template}!GenericsTemplates\_12.h@{GenericsTemplates\_12.h}}
+\doxysubsubsection{\texorpdfstring{demonstrate\_template()}{demonstrate\_template()}}
+{\footnotesize\ttfamily void demonstrate\+\_\+template (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implementation of templates. 
+
+Longer description of function; Our goal here is to reduce the duplications we don\textquotesingle{}t want two functions doing the same thing we want one
+
+vectors are like a template/class
+
+Behind the scenes Templeate argument deduction\+: the compiler deduces the type that should be used from the argument types
+
+templates types are sometimes called generic types
+
+a good rule of thumb is to create normal functions at first, and then convert them into function templates if you find you need an overload for different parameter types
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_generics_templates__12_8h_a80e1bc04db43b05972b6f89f612c78fd}\label{_generics_templates__12_8h_a80e1bc04db43b05972b6f89f612c78fd}} 
+\index{GenericsTemplates\_12.h@{GenericsTemplates\_12.h}!return\_it@{return\_it}}
+\index{return\_it@{return\_it}!GenericsTemplates\_12.h@{GenericsTemplates\_12.h}}
+\doxysubsubsection{\texorpdfstring{return\_it()}{return\_it()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T return\+\_\+it (\begin{DoxyParamCaption}\item[{T}]{thing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Short description of function. 
+
+Longer description of function\+: Use a single capital letter(starting with T) to name your template types (e.\+g, T, U, V, etc...) T represents a blank spot for any type of data type(s)
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & thing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+thing 
+\end{DoxyReturn}

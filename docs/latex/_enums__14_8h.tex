@@ -1,0 +1,100 @@
+\hypertarget{_enums__14_8h}{}\doxysection{Enums\+\_\+14.\+h File Reference}
+\label{_enums__14_8h}\index{Enums\_14.h@{Enums\_14.h}}
+
+
+Header that houses code for week 14 section.  
+
+
+{\ttfamily \#include $<$ostream$>$}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \{ {\bfseries a} = 1
+, {\bfseries b}
+, {\bfseries c}
+, {\bfseries d}
+ \}
+\begin{DoxyCompactList}\small\item\em enum tutorial \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \& \mbox{\hyperlink{_enums__14_8h_a92c5d7f1437d72cb203ed5c3b922e529}{operator-\/-\/}} (\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \&x) noexcept
+\begin{DoxyCompactList}\small\item\em prefix \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \mbox{\hyperlink{_enums__14_8h_acda38e98f5b6d3f2f77f3b505e9fb808}{operator-\/-\/}} (\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \&x, int) noexcept
+\begin{DoxyCompactList}\small\item\em postfix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header that houses code for week 14 section. 
+
+Longer description of file\+: This header is meant to contain code that covers enums. This specifically houses operator overloads that changes the value inputed by the user
+
+\begin{DoxyAuthor}{Author}
+Richardson Jacques
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000006}{Bug}}]5 bugs.\end{DoxyRefDesc}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}\label{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}} 
+\index{Enums\_14.h@{Enums\_14.h}!e@{e}}
+\index{e@{e}!Enums\_14.h@{Enums\_14.h}}
+\doxysubsubsection{\texorpdfstring{e}{e}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+enum tutorial 
+
+Longer description of function\+: 1) There are two types of enums 2) enums don\textquotesingle{}t have methods in c++ 3) Don\textquotesingle{}t use ALL\+\_\+\+CAPS for enumerators
+
+4) don\textquotesingle{}t have an enum where the objects have the same values (the enumerations become interchangeable), it might not be an error in c++ but it is poor coding practice! This should be avoided.
+
+5) Best practice\+: Don\textquotesingle{}t assign specific values to your enumerators
+
+6) Best practice\+: Don\textquotesingle{}t assign the same value to two enumerators in the same enumeration unless there\textquotesingle{}s a very good reason.
+
+7) Enums are like a class in which all of the objects are predefined Enumerated types are incredibly useful for code documentation and readability purposes when you need to represent a specific, predefined set of states. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_enums__14_8h_a92c5d7f1437d72cb203ed5c3b922e529}\label{_enums__14_8h_a92c5d7f1437d72cb203ed5c3b922e529}} 
+\index{Enums\_14.h@{Enums\_14.h}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Enums\_14.h@{Enums\_14.h}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \& operator-\/-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+prefix 
+
+Longer description of function\+: a decrementation function that is only used when the there is a prefix decrementation
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\&} & x\+: the value being decremented\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_enums__14_8h_acda38e98f5b6d3f2f77f3b505e9fb808}\label{_enums__14_8h_acda38e98f5b6d3f2f77f3b505e9fb808}} 
+\index{Enums\_14.h@{Enums\_14.h}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Enums\_14.h@{Enums\_14.h}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} operator-\/-\/ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \&}]{x,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+postfix 
+
+Longer description of function\+: a decrementation function that is only used when the there is a postfix decrementation
+
+
+\begin{DoxyParams}{Parameters}
+{\em e\&} & x\+: the value being decremented\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+x 
+\end{DoxyReturn}

@@ -1,0 +1,45 @@
+\hypertarget{_strings_as_obj_nspc_ex__6_8h_source}{}\doxysection{Strings\+As\+Obj\+Nspc\+Ex\+\_\+6.\+h}
+\mbox{\hyperlink{_strings_as_obj_nspc_ex__6_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{18 \textcolor{comment}{// Namespaces: a set of signs (names) that are used to identify and refer to}}
+\DoxyCodeLine{19 \textcolor{comment}{// objects of various kinds. A namespace ensures that all of a given set of}}
+\DoxyCodeLine{20 \textcolor{comment}{// objects have unique names so that they can be easily identified. kind of like}}
+\DoxyCodeLine{21 \textcolor{comment}{// license plates the numbers can be the same but they are on different cars.}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{30 \textcolor{keywordtype}{void} \mbox{\hyperlink{_strings_as_obj_nspc_ex__6_8h_a021b2fac64bf5eb48fe729cb8af03418}{demo\_save\_to\_file}}() \{}
+\DoxyCodeLine{31   std::ofstream myfile(\textcolor{stringliteral}{"{}example.txt"{}});}
+\DoxyCodeLine{32   \textcolor{comment}{// class object}}
+\DoxyCodeLine{33   \textcolor{comment}{// class is kind of like a data type}}
+\DoxyCodeLine{34   \textcolor{comment}{// an object is kind of like a variable}}
+\DoxyCodeLine{35   \textcolor{keywordflow}{if} (myfile.is\_open())  \textcolor{comment}{// is\_open is a function in}}
+\DoxyCodeLine{36                          \textcolor{comment}{// the class aka a method}}
+\DoxyCodeLine{37   \{}
+\DoxyCodeLine{38     myfile << \textcolor{stringliteral}{"{}This is a line.\(\backslash\)n"{}};}
+\DoxyCodeLine{39     myfile << \textcolor{stringliteral}{"{}This is another line.\(\backslash\)n"{}};}
+\DoxyCodeLine{40     std::cout << \textcolor{stringliteral}{"{}Text save to file\(\backslash\)n"{}};}
+\DoxyCodeLine{41     myfile.close();}
+\DoxyCodeLine{42   \} \textcolor{keywordflow}{else}}
+\DoxyCodeLine{43     std::cout << \textcolor{stringliteral}{"{}Unable to open file"{}};}
+\DoxyCodeLine{44 \}}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{comment}{// strings are technically a class}}
+\DoxyCodeLine{47 \textcolor{comment}{// line is technically a variable}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{54 \textcolor{keywordtype}{void} \mbox{\hyperlink{_strings_as_obj_nspc_ex__6_8h_a8fc9575f70968e2ec314de8c17d3c3e3}{demo\_read\_from\_file}}() \{}
+\DoxyCodeLine{55   std::string line;}
+\DoxyCodeLine{56   std::ifstream myfile(\textcolor{stringliteral}{"{}example.txt"{}});}
+\DoxyCodeLine{57   \textcolor{keywordflow}{if} (myfile.is\_open()) \{}
+\DoxyCodeLine{58     \textcolor{keywordflow}{while} (std::getline(myfile, line)) \{}
+\DoxyCodeLine{59       std::cout << line << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{60     \}}
+\DoxyCodeLine{61     myfile.close();}
+\DoxyCodeLine{62   \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{65     std::cout << \textcolor{stringliteral}{"{}Unable to open file"{}};}
+\DoxyCodeLine{66 \}}
+
+\end{DoxyCode}

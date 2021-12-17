@@ -1,0 +1,79 @@
+\hypertarget{_operator_overload__13_8h}{}\doxysection{Operator\+Overload\+\_\+13.\+h File Reference}
+\label{_operator_overload__13_8h}\index{OperatorOverload\_13.h@{OperatorOverload\_13.h}}
+
+
+Header that houses code for week 13 section.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_complex}{Complex}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_complex}{Complex}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{_operator_overload__13_8h_a43b72627b62d592f6e96dc9699e02e65}{operator+}} (const \mbox{\hyperlink{class_complex}{Complex}} \&c1, const \mbox{\hyperlink{class_complex}{Complex}} \&c2) noexcept
+\begin{DoxyCompactList}\small\item\em Overload operator + for the class \mbox{\hyperlink{class_complex}{Complex}}. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{_operator_overload__13_8h_a5a5d167affff82cd70561bcc683c2ee3}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{class_complex}{Complex}} \&c1)
+\begin{DoxyCompactList}\small\item\em Overload operators \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} for the class complex. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header that houses code for week 13 section. 
+
+Longer description of file\+: This header file has code that describes how Operator overloaders work.
+
+\begin{DoxyAuthor}{Author}
+Your Name
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Bug}
+\item[\mbox{\hyperlink{bug__bug000015}{Bug}}]8 bugs.\end{DoxyRefDesc}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_operator_overload__13_8h_a43b72627b62d592f6e96dc9699e02e65}\label{_operator_overload__13_8h_a43b72627b62d592f6e96dc9699e02e65}} 
+\index{OperatorOverload\_13.h@{OperatorOverload\_13.h}!operator+@{operator+}}
+\index{operator+@{operator+}!OperatorOverload\_13.h@{OperatorOverload\_13.h}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{class_complex}{Complex}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_complex}{Complex}} \&}]{c1,  }\item[{const \mbox{\hyperlink{class_complex}{Complex}} \&}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+
+
+Overload operator + for the class \mbox{\hyperlink{class_complex}{Complex}}. 
+
+Longer description of function\+: + should add two complex numbers as (a+ib) + (c+id) = (a+c) + i(b+d)
+
+
+\begin{DoxyParams}{Parameters}
+{\em const} & \mbox{\hyperlink{class_complex}{Complex}}\& c1 \\
+\hline
+{\em const} & \mbox{\hyperlink{class_complex}{Complex}}\& c2\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new\+\_\+c 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_operator_overload__13_8h_a5a5d167affff82cd70561bcc683c2ee3}\label{_operator_overload__13_8h_a5a5d167affff82cd70561bcc683c2ee3}} 
+\index{OperatorOverload\_13.h@{OperatorOverload\_13.h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!OperatorOverload\_13.h@{OperatorOverload\_13.h}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_complex}{Complex}} \&}]{c1 }\end{DoxyParamCaption})}
+
+
+
+Overload operators \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} for the class complex. 
+
+Longer description of function\+: \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} should print a complex number in the format \char`\"{}a+ib\char`\"{} the ostream operator is pretty much always used for \textquotesingle{}operator\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}\textquotesingle{} this pretty much allows us to have the print statement be the total a+ib. overload thhe output of the stream operator
+
+
+\begin{DoxyParams}{Parameters}
+{\em std\+::ostream\&} & os \\
+\hline
+{\em const} & \mbox{\hyperlink{class_complex}{Complex}}\& c1\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+os 
+\end{DoxyReturn}

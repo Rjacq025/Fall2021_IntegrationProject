@@ -1,0 +1,137 @@
+\hypertarget{_point_funct_mem__4_8h_source}{}\doxysection{Point\+Funct\+Mem\+\_\+4.\+h}
+\mbox{\hyperlink{_point_funct_mem__4_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{comment}{// prototypes}}
+\DoxyCodeLine{21 \textcolor{comment}{// used for functions after the main/running function}}
+\DoxyCodeLine{22 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ae23545caa861e6e3e978d28d7845a826}{demonstrate\_pass\_by\_value}}(\textcolor{keywordtype}{int},}
+\DoxyCodeLine{23                                \textcolor{keywordtype}{int});  \textcolor{comment}{// prototype has to match the parameters}}
+\DoxyCodeLine{24 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a46f0b143311aeb895ac12416ced70925}{demonstrate\_pass\_by\_ref}}(}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int}\&, \textcolor{keywordtype}{int}\&);  \textcolor{comment}{// prototype MUST match the parameters/header}}
+\DoxyCodeLine{26 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a17bfa9eea7755bad127aa44fa17ecc0e}{demonstrate\_pass\_by\_address}}(\textcolor{keywordtype}{int}*, \textcolor{keywordtype}{int}*);}
+\DoxyCodeLine{27 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a395bc6c0bffda1346c121ea7b4ff330e}{demonstrate\_more\_function\_stuff}}();}
+\DoxyCodeLine{28 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a4f477d7a38ee006969e5dc09fe6762c8}{demonstrate\_default\_parameters}}();}
+\DoxyCodeLine{29 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}{default\_parameters}}(std::string greet, \textcolor{keywordtype}{int} repeats = 1);}
+\DoxyCodeLine{30 \textcolor{keyword}{inline} \textcolor{keywordtype}{int} \textcolor{keyword}{constexpr} \mbox{\hyperlink{_point_funct_mem__4_8h_a75d620973b06dab59522d112ed9c2f8b}{min}}(\textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}) \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{31 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}{demoOverload}}();}
+\DoxyCodeLine{32 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}{demoOverload}}(\textcolor{keywordtype}{int} num1);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{41 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a032e95e994ff22ed71fff927ff1653f8}{demonstrate\_functions}}() \{}
+\DoxyCodeLine{42   \textcolor{keywordtype}{int} num1 = 4;}
+\DoxyCodeLine{43   \textcolor{keywordtype}{int} num2 = 5;}
+\DoxyCodeLine{44   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{45   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47   \mbox{\hyperlink{_point_funct_mem__4_8h_ae23545caa861e6e3e978d28d7845a826}{demonstrate\_pass\_by\_value}}(num1, num2);  \textcolor{comment}{// calling a method}}
+\DoxyCodeLine{48   std::cout << \textcolor{stringliteral}{"{}back in calling function "{}} << std::endl;}
+\DoxyCodeLine{49   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{50   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52   \mbox{\hyperlink{_point_funct_mem__4_8h_a46f0b143311aeb895ac12416ced70925}{demonstrate\_pass\_by\_ref}}(num1, num2);  \textcolor{comment}{// calling a method}}
+\DoxyCodeLine{53   std::cout << \textcolor{stringliteral}{"{}back in calling function "{}} << std::endl;}
+\DoxyCodeLine{54   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{55   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57   \mbox{\hyperlink{_point_funct_mem__4_8h_a17bfa9eea7755bad127aa44fa17ecc0e}{demonstrate\_pass\_by\_address}}(}
+\DoxyCodeLine{58       \&num1, \&num2);  \textcolor{comment}{// calling a method/function   "{}\&"{} in front of data type}}
+\DoxyCodeLine{59                       \textcolor{comment}{// sends address not value}}
+\DoxyCodeLine{60   std::cout << \textcolor{stringliteral}{"{}back in calling function "{}} << std::endl;}
+\DoxyCodeLine{61   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{62   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{63 \}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{66 }
+\DoxyCodeLine{89 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ae23545caa861e6e3e978d28d7845a826}{demonstrate\_pass\_by\_value}}(\textcolor{keywordtype}{int} num1, \textcolor{keywordtype}{int} num2) \{  \textcolor{comment}{// heading}}
+\DoxyCodeLine{90   std::cout << \textcolor{stringliteral}{"{}In demonstrate\_pass\_by\_value "{}} << std::endl;}
+\DoxyCodeLine{91   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{92   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{93   num1 = 6;  \textcolor{comment}{// Reassigning the variables}}
+\DoxyCodeLine{94   num2 = 7;}
+\DoxyCodeLine{95   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{96   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{97 \}}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101 \textcolor{comment}{// the best place to put an ampersand "{}\&"{} is right after the data type in the}}
+\DoxyCodeLine{102 \textcolor{comment}{// header and since the ampersand is in the header it also has to be in the}}
+\DoxyCodeLine{103 \textcolor{comment}{// prototype. You don't have to do it in the call though...}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{128 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a46f0b143311aeb895ac12416ced70925}{demonstrate\_pass\_by\_ref}}(\textcolor{keywordtype}{int}\& num1, \textcolor{keywordtype}{int}\& num2) \{  \textcolor{comment}{// heading}}
+\DoxyCodeLine{129   std::cout << \textcolor{stringliteral}{"{}In demonstrate\_pass\_by\_ref "{}} << std::endl;}
+\DoxyCodeLine{130   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{131   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{132   num1 = 6;}
+\DoxyCodeLine{133   num2 = 7;}
+\DoxyCodeLine{134   std::cout << \textcolor{stringliteral}{"{}num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{135   std::cout << \textcolor{stringliteral}{"{}num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137   \textcolor{comment}{//}}
+\DoxyCodeLine{138 \}}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{141 }
+\DoxyCodeLine{184 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a17bfa9eea7755bad127aa44fa17ecc0e}{demonstrate\_pass\_by\_address}}(\textcolor{keywordtype}{int}* num1, \textcolor{keywordtype}{int}* num2) \{  \textcolor{comment}{// heading}}
+\DoxyCodeLine{185   std::cout << \textcolor{stringliteral}{"{}In demonstrate\_pass\_by\_address "{}} << std::endl;}
+\DoxyCodeLine{186   std::cout << \textcolor{stringliteral}{"{}the address of num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{187   std::cout << \textcolor{stringliteral}{"{}the address of num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{188   std::cout << \textcolor{stringliteral}{"{}the value of num1 is "{}} << *num1 << std::endl;}
+\DoxyCodeLine{189   std::cout << \textcolor{stringliteral}{"{}the value of num2 is "{}} << *num2 << std::endl;}
+\DoxyCodeLine{190   *num1 = 8;}
+\DoxyCodeLine{191   *num2 = 9;}
+\DoxyCodeLine{192   std::cout << \textcolor{stringliteral}{"{}the address of num1 is "{}} << num1 << std::endl;}
+\DoxyCodeLine{193   std::cout << \textcolor{stringliteral}{"{}the address of num2 is "{}} << num2 << std::endl;}
+\DoxyCodeLine{194   std::cout << \textcolor{stringliteral}{"{}the value of num1 is "{}} << *num1 << std::endl;}
+\DoxyCodeLine{195   std::cout << \textcolor{stringliteral}{"{}the value of num2 is "{}} << *num2 << std::endl;}
+\DoxyCodeLine{196 \}}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{199 }
+\DoxyCodeLine{204 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a395bc6c0bffda1346c121ea7b4ff330e}{demonstrate\_more\_function\_stuff}}() \{}
+\DoxyCodeLine{205   \textcolor{comment}{// default parameters}}
+\DoxyCodeLine{206   \mbox{\hyperlink{_point_funct_mem__4_8h_a4f477d7a38ee006969e5dc09fe6762c8}{demonstrate\_default\_parameters}}();}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208   \textcolor{comment}{// inline functions}}
+\DoxyCodeLine{209   std::cout << \mbox{\hyperlink{_point_funct_mem__4_8h_a75d620973b06dab59522d112ed9c2f8b}{min}}(5, 6) << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{210   \textcolor{comment}{// compiler would make something like}}
+\DoxyCodeLine{211   \textcolor{comment}{// std::cout << 5 < 6 ? 5 : 6;  << '\(\backslash\)n';}}
+\DoxyCodeLine{212   std::cout << \mbox{\hyperlink{_point_funct_mem__4_8h_a75d620973b06dab59522d112ed9c2f8b}{min}}(3, 2) << \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214   \textcolor{comment}{// overloaded functions}}
+\DoxyCodeLine{215   \mbox{\hyperlink{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}{demoOverload}}();}
+\DoxyCodeLine{216   \mbox{\hyperlink{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}{demoOverload}}(2);}
+\DoxyCodeLine{217 \};}
+\DoxyCodeLine{218 }
+\DoxyCodeLine{219 \textcolor{comment}{// Overload is demonstrated by having the same function name but different}}
+\DoxyCodeLine{220 \textcolor{comment}{// signatures (parameters)}}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{227 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}{demoOverload}}() \{}
+\DoxyCodeLine{228   std::cout << \textcolor{stringliteral}{"{}in demoOverload with no parameters"{}} << std::endl;}
+\DoxyCodeLine{229 \}}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{240 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ad20fc45381ac7d921745fb5f8a01eb51}{demoOverload}}(\textcolor{keywordtype}{int} num1) \{}
+\DoxyCodeLine{241   std::cout << \textcolor{stringliteral}{"{}in demoOverload with one parameters"{}} << std::endl;}
+\DoxyCodeLine{242 \}}
+\DoxyCodeLine{243 }
+\DoxyCodeLine{244 \textcolor{comment}{// you don't have to actually type inline in the header}}
+\DoxyCodeLine{260 \textcolor{comment}{}\textcolor{keyword}{inline} \textcolor{keywordtype}{int} \textcolor{keyword}{constexpr} \mbox{\hyperlink{_point_funct_mem__4_8h_a75d620973b06dab59522d112ed9c2f8b}{min}}(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y) \textcolor{keyword}{noexcept}  \textcolor{comment}{// example of inline function}}
+\DoxyCodeLine{261 \{  }
+\DoxyCodeLine{262   \textcolor{keywordflow}{return} x < y ? x : y;}
+\DoxyCodeLine{263 \}}
+\DoxyCodeLine{264 }
+\DoxyCodeLine{276 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_a4f477d7a38ee006969e5dc09fe6762c8}{demonstrate\_default\_parameters}}() \{}
+\DoxyCodeLine{277   }
+\DoxyCodeLine{278   \mbox{\hyperlink{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}{default\_parameters}}(\textcolor{stringliteral}{"{}Hello"{}}, 2);}
+\DoxyCodeLine{279   \mbox{\hyperlink{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}{default\_parameters}}(\textcolor{stringliteral}{"{}Good morning"{}});}
+\DoxyCodeLine{280   \mbox{\hyperlink{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}{default\_parameters}}(\textcolor{stringliteral}{"{}Hi"{}}, 1);}
+\DoxyCodeLine{281 \}}
+\DoxyCodeLine{282 }
+\DoxyCodeLine{293 \textcolor{keywordtype}{void} \mbox{\hyperlink{_point_funct_mem__4_8h_ad211fd713a6018a1ca30b349ab0e3c97}{default\_parameters}}(std::string greet,}
+\DoxyCodeLine{294                         \textcolor{keywordtype}{int} repeats) \{  \textcolor{comment}{// this header has a default}}
+\DoxyCodeLine{295   \textcolor{comment}{// if you do use a parameter you are going to put the default value in the}}
+\DoxyCodeLine{296   \textcolor{comment}{// parameter/prototype section}}
+\DoxyCodeLine{297   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < repeats; i++) \{}
+\DoxyCodeLine{298     std::cout << greet << std::endl;}
+\DoxyCodeLine{299   \}}
+\DoxyCodeLine{300 \}}
+
+\end{DoxyCode}

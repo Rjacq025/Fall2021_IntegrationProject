@@ -1,0 +1,28 @@
+\hypertarget{_enums__14_8h_source}{}\doxysection{Enums\+\_\+14.\+h}
+\mbox{\hyperlink{_enums__14_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <ostream>}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{44 \textcolor{keyword}{enum class} \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \{ a = 1, b, c, d \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{60 \textcolor{keyword}{const} \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}}\& \mbox{\hyperlink{_enums__14_8h_a92c5d7f1437d72cb203ed5c3b922e529}{operator-\/-\/}}(\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}}\& x) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{61   \textcolor{keywordflow}{if} (\textcolor{keywordtype}{int}(x) == 1) \{}
+\DoxyCodeLine{62     x = e::d;  \textcolor{comment}{// :: is used to access the enum class in contrast to a regular}}
+\DoxyCodeLine{63                \textcolor{comment}{// enum}}
+\DoxyCodeLine{64   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{65     x = \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}}\textcolor{keyword}{>}(int(x) -\/ 1);}
+\DoxyCodeLine{66   \}}
+\DoxyCodeLine{67   \textcolor{keywordflow}{return} x;}
+\DoxyCodeLine{68 \}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{83 \textcolor{keyword}{const} \mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}} \mbox{\hyperlink{_enums__14_8h_a92c5d7f1437d72cb203ed5c3b922e529}{operator-\/-\/}}(\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}}\& x, \textcolor{keywordtype}{int}) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{84   \textcolor{keywordflow}{if} (\textcolor{keywordtype}{int}(x) == 1) \{}
+\DoxyCodeLine{85     x = e::d;}
+\DoxyCodeLine{86   \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{87     x = \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{_enums__14_8h_a08a4415e9d594ff960030b921d42b91e}{e}}\textcolor{keyword}{>}(int(x) -\/ 1);}
+\DoxyCodeLine{88   \}}
+\DoxyCodeLine{89   \textcolor{keywordflow}{return} x;}
+\DoxyCodeLine{90 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,39 @@
+\hypertarget{_date__8_8h_source}{}\doxysection{Date\+\_\+8.\+h}
+\mbox{\hyperlink{_date__8_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#ifndef DATE\_H}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define DATE\_H}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{comment}{// For classes used in only one file that aren’t generally reusable, define them}}
+\DoxyCodeLine{22 \textcolor{comment}{// directly in the single .cpp file they’re used in. Trivial member functions}}
+\DoxyCodeLine{23 \textcolor{comment}{// (trivial constructors or destructors, access functions, etc…) can be defined}}
+\DoxyCodeLine{24 \textcolor{comment}{// inside the class. For classes used in multiple files, or intended for general}}
+\DoxyCodeLine{25 \textcolor{comment}{// reuse, define them in a .h file that has the same name as the class.}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{comment}{// LO6. Use object-\/oriented encapsulation mechanisms such as interfaces and}}
+\DoxyCodeLine{28 \textcolor{comment}{// private members. [Usage]}}
+\DoxyCodeLine{29 \textcolor{comment}{// LO1a. At least one class in a header file with non-\/trivial methods}}
+\DoxyCodeLine{30 \textcolor{comment}{// implemented in a cpp file}}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{46 \textcolor{keyword}{class }\mbox{\hyperlink{class_date__8}{Date\_8}} \{}
+\DoxyCodeLine{47  \textcolor{keyword}{private}:}
+\DoxyCodeLine{48   \textcolor{keywordtype}{int} m\_year;}
+\DoxyCodeLine{49   \textcolor{keywordtype}{int} m\_month;}
+\DoxyCodeLine{50   \textcolor{keywordtype}{int} m\_day;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52  \textcolor{keyword}{public}:}
+\DoxyCodeLine{53   \mbox{\hyperlink{class_date__8_a22f1222e42c8786c47ba866a365253de}{Date\_8}}(\textcolor{keywordtype}{int} year, \textcolor{keywordtype}{int} month, \textcolor{keywordtype}{int} day);}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55   \textcolor{keywordtype}{void} \mbox{\hyperlink{class_date__8_a7e10759dcbc7eb23f4bb3a5c9c59ae06}{SetDate}}(\textcolor{keywordtype}{int} year, \textcolor{keywordtype}{int} month, \textcolor{keywordtype}{int} day);}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57   \textcolor{keywordtype}{int} \textcolor{keyword}{const} getYear() \textcolor{keyword}{noexcept} \{ \textcolor{keywordflow}{return} m\_year; \}}
+\DoxyCodeLine{58   \textcolor{keywordtype}{int} \textcolor{keyword}{const} getMonth() \textcolor{keyword}{noexcept} \{ \textcolor{keywordflow}{return} m\_month; \}}
+\DoxyCodeLine{59   \textcolor{keywordtype}{int} \textcolor{keyword}{const} getDay() \textcolor{keyword}{noexcept} \{ \textcolor{keywordflow}{return} m\_day; \}}
+\DoxyCodeLine{60 \};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

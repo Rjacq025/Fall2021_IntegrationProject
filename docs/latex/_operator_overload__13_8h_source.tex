@@ -1,0 +1,48 @@
+\hypertarget{_operator_overload__13_8h_source}{}\doxysection{Operator\+Overload\+\_\+13.\+h}
+\mbox{\hyperlink{_operator_overload__13_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{31 \textcolor{keyword}{class }\mbox{\hyperlink{class_complex}{Complex}} \{}
+\DoxyCodeLine{32  \textcolor{keyword}{public}:}
+\DoxyCodeLine{33   \textcolor{keywordtype}{int} a, b;}
+\DoxyCodeLine{34   \textcolor{keywordtype}{void} \textcolor{keyword}{const} input(std::string s) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{35     \textcolor{keywordtype}{int} v1 = 0;}
+\DoxyCodeLine{36     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{37     \textcolor{keywordflow}{while} (s[i] != \textcolor{charliteral}{'+'}) \{}
+\DoxyCodeLine{38       v1 = v1 * 10 + s[i] -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{39       i++;}
+\DoxyCodeLine{40     \}}
+\DoxyCodeLine{41     \textcolor{keywordflow}{while} (s[i] == \textcolor{charliteral}{' '} || s[i] == \textcolor{charliteral}{'+'} || s[i] == \textcolor{charliteral}{'i'}) \{}
+\DoxyCodeLine{42       i++;}
+\DoxyCodeLine{43     \}}
+\DoxyCodeLine{44     \textcolor{keywordtype}{int} v2 = 0;}
+\DoxyCodeLine{45     \textcolor{keywordflow}{while} (\textcolor{keywordtype}{unsigned}(i) < s.length()) \{}
+\DoxyCodeLine{46       v2 = v2 * 10 + s[i] -\/ \textcolor{charliteral}{'0'};}
+\DoxyCodeLine{47       i++;}
+\DoxyCodeLine{48     \}}
+\DoxyCodeLine{49     a = v1;}
+\DoxyCodeLine{50     b = v2;}
+\DoxyCodeLine{51   \}}
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \textcolor{comment}{// more often than not the datatype of the operatior has to be the class that}}
+\DoxyCodeLine{55 \textcolor{comment}{// you're going to be working with}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 }
+\DoxyCodeLine{72 \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}} \mbox{\hyperlink{_operator_overload__13_8h_a43b72627b62d592f6e96dc9699e02e65}{operator+}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& c1, \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& c2) \textcolor{keyword}{noexcept} \{}
+\DoxyCodeLine{73   \mbox{\hyperlink{class_complex}{Complex}} new\_c;}
+\DoxyCodeLine{74   new\_c.a = c1.a + c2.a;}
+\DoxyCodeLine{75   new\_c.b = c1.b + c2.b;}
+\DoxyCodeLine{76   \textcolor{keywordflow}{return} new\_c;}
+\DoxyCodeLine{77 \}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \textcolor{comment}{// }}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{96 std::ostream\& \mbox{\hyperlink{_operator_overload__13_8h_a5a5d167affff82cd70561bcc683c2ee3}{operator<<}}(std::ostream\& os, \textcolor{keyword}{const} \mbox{\hyperlink{class_complex}{Complex}}\& c1) \{}
+\DoxyCodeLine{97   os << c1.a << \textcolor{stringliteral}{"{}+i"{}} << c1.b << std::endl;}
+\DoxyCodeLine{98   \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{99 \}}
+
+\end{DoxyCode}

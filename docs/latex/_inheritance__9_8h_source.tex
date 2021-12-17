@@ -1,0 +1,29 @@
+\hypertarget{_inheritance__9_8h_source}{}\doxysection{Inheritance\+\_\+9.\+h}
+\mbox{\hyperlink{_inheritance__9_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <cstdio>}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{comment}{// LO2. Use subclassing to design simple class hierarchies that allow code to be}}
+\DoxyCodeLine{27 \textcolor{comment}{// reused for distinct subclasses. [Usage]}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{40 \textcolor{keyword}{class }\mbox{\hyperlink{class_triangle}{Triangle}} \{}
+\DoxyCodeLine{41  \textcolor{keyword}{public}:}
+\DoxyCodeLine{42   \textcolor{keywordtype}{void} triangle() \{ std::cout << \textcolor{stringliteral}{"{}I am a triangle\(\backslash\)n"{}}; \}}
+\DoxyCodeLine{43 \};}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{52 \textcolor{keyword}{class }\mbox{\hyperlink{class_isosceles}{Isosceles}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_triangle}{Triangle}} \{}
+\DoxyCodeLine{53  \textcolor{keyword}{public}:}
+\DoxyCodeLine{54   \textcolor{keywordtype}{void} isosceles() \{ std::cout << \textcolor{stringliteral}{"{}I am an isosceles triangle\(\backslash\)n"{}}; \}}
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{62 \textcolor{keyword}{class }\mbox{\hyperlink{class_equilateral}{Equilateral}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_isosceles}{Isosceles}} \{}
+\DoxyCodeLine{63  \textcolor{keyword}{public}:}
+\DoxyCodeLine{64   \textcolor{keywordtype}{void} equilateral() \{ std::cout << \textcolor{stringliteral}{"{}I am an equilateral triangle\(\backslash\)n"{}}; \}}
+\DoxyCodeLine{65 \};}
+
+\end{DoxyCode}
