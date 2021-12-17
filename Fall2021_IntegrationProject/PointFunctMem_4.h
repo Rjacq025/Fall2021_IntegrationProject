@@ -154,8 +154,7 @@ void demonstrate_pass_by_address(int* num1, int* num2) {  // heading
   // address.
 }
 
-//////////////////////////////////// Default parameters, inline functions, and
-///overloaded functions
+///////////////// Default parameters, inline functions, and overloaded functions
 
 void demonstrate_more_function_stuff() {
   // default parameters

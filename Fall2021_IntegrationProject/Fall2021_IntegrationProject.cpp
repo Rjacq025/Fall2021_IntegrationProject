@@ -38,19 +38,17 @@
 
 //////////////////////////////////// Week 1 ////////////////////////////////////
 
-// This week doesn't start with coding
-
-/** @brief Short description of function.
+/** @brief This week doesn't start with coding
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: During Week 1 of this class, not much
+ attention was not based on coding itself but rather the IDE's and computer
+ setups behind this.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return void
 
  */
 void demo_essentials() {
@@ -62,39 +60,32 @@ void demo_essentials() {
          "is a software application that usually consists of a code editor, a "
          "compiler, a debugger, and a graphical user interface (GUI) "
          "builder.\n";
-
 }
 
 //////////////////////////////////// Week 2 ////////////////////////////////////
 
-// This week covers the basics of c++ coding that the students covered in the
-// previous semester
-
-// In situations where the function is created after the main function use a
-// 'prototype' before the main function. A function prototype is a forward
-// declaration. It consists of:      return type header(parameter);
-
-// not needed when included in .h file
-
-/** @brief Short description of function.
+/** @brief This week covers the basics of c++ coding that the students covered
+ in the previous semester
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: During this week, we covered the basics of
+ c++ coding that the students covered in the previous semester. This included
+ topics like. In order toshow a prime example of these topics I have programmed
+ a meal price calculator. Notes seen in code.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
+
 void demo_basicsReview() {
   std::cout << "2: Basics Review - Programming Concepts\n";
-  // During this week, we covered the basics of c++ coding that the students
-  // covered in the previous semester. This included topics like. In order to
-  // show a prime example of these topics I have programmed a meal price
-  // calculator. Notes seen in code.
+  // In situations where the function is created after the main function use a
+  // 'prototype' before the main function. A function prototype is a forward
+  // declaration. It consists of: return type header(parameter);
+  // not needed when included in .h file
 
   // Meal Price Calculator
 
@@ -109,36 +100,31 @@ void demo_basicsReview() {
       calc_total_meal_price(meal_price);  // function call (argument)
 
   std::cout << "Total Price: " << total_price << "\n";
-
 }
 
 //////////////////////////////////// Week 3 ////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief During this week we covered flow control and data aggregates
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: We learned how to control the flow of the
+ program (finishing up this topic from last week), and mostly about the if, else
+ and switch statements. These statements are used to control the conditions and
+ path of the running program. We also looked into bitwise operators. The class
+ also covered vectors. The coding example below for this week is a bitwise
+ calculation program meant to gather possible comparison values from two
+ integers inputted by the user. This uses the bitwise values of the numbers
+ below these and compare them. This is referenced from my work on HackerRank.
+ Again, the notes are in the code.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_flowControl() {
   std::cout << "3: Flow control and data aggregates\n";
-  // During this week we covered flow control and data aggregates. We learned
-  // how to control the flow of the program (finishing up this topic from last
-  // week), and mostly about the if, else and switch statements. These
-  // statements are used to control the conditions and path of the running
-  // program. We also looked into bitwise operators. The class also covered
-  // vectors. The coding example below for this week is a bitwise calculation
-  // program meant to gather possible comparison values from two integers
-  // inputted by the user. This uses the bitwise values of the numbers below
-  // these and compare them. This is referenced from my work on HackerRank.
-  // Again, the notes are in the code.
 
   std::cout << "\nPlease insert the highest number to consider: ";
   int max_of_set = 0;  // n
@@ -199,22 +185,21 @@ void demo_flowControl() {
   // return multiiple values by wrapping them in a class or struct. Personal
   // Note: I'm not making this into a struct or a class so I'm not using a
   // header for this week.
-
 }
 
 //////////////////////////////////// Week 4 ////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief Pointers, functions, and memory - Parameter passing dereferencing
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: During this week we covered passing
+ parameters and other ways to influence values through the manipulation of
+ headers and their parameters
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_pointer() {
@@ -253,30 +238,26 @@ void demo_pointer() {
   // }
   //
   //
-
 }
 
 //////////////////////////////////// Week 5 ////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief An introduction to Data and its place in classes.
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: This week we mainly started the use of
+ objects, specifically focusing on fields, methods, and overall properties of
+ classes. The example code is based off of an example from cplusplus.com and
+ their tutorial on classes, with some adjustments to cover the topics in class.;
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_array() {
   std::cout << "5: Data - Arrays of pointers and Conversion - Strings intro\n";
-  // This week we mainly started the use of objects, specifically focusing on
-  // fields, methods, and overall properties of classes. The example code is
-  // based off of an example from cplusplus.com and their tutorial on classes,
-  // with some adjustments to cover the topics in class.;
 
   // A class is kind of like a blueprint or a cookie cutter (not exactly an
   // existing object). These are the instructions for creating an object with
@@ -298,22 +279,20 @@ void demo_array() {
   std::cout << "width: " << rect.get_width() << "\n";
   std::cout << "height: " << rect.get_height() << "\n";
   std::cout << "area: " << rect.area() << "\n";
-
 }
 
 //////////////////////////////////// Week 6 ////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief Covers interacting with data not directly in the code of a program.
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: This function show how to saves text to a
+ computer file then reads that saved text from the file all while using code.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_data() {
@@ -326,22 +305,20 @@ void demo_data() {
 
   // The result from this is coming from a saved file
   demo_read_from_file();
-
 }
 
 //////////////////////////////////// Week 7 ////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief Shows Modularity (classes and packages)
+ *
+
+ *  Longer description of function: Shows Modularity (classes and packages)
+ especially under different types of programming (procedural vs. Object Oriented
+ Programming)
 
  *
 
- *  Longer description of function.
-
- *
-
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_modularity() {
@@ -394,23 +371,20 @@ void demo_modularity() {
   //
   //  Procedural programming is based on the unreal world, whereas OOP is based
   //  on the real world
-
-
 }
 
 //////////////////////////////////// Week 8 ////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief This week we covered encapsulation.
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: We covered encapsulation with the use of
+ access identifiers and how to work with hidden data.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_encapsulation() {
@@ -423,22 +397,20 @@ void demo_encapsulation() {
   Date_8 my_date(2011, 10, 12);  // makes an object
   std::cout << my_date.getYear() << " / " << my_date.getMonth() << " / "
             << my_date.getDay() << std::endl;
-
 }
 
 //////////////////////////////////// Week 9 ////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief This week we covered inheritance (Class hierarchies).
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: The class hierarchies in inheritance allow
+ code in parent/super classes to be reused for distinct subclasses
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_inheritance() {
@@ -487,22 +459,23 @@ void demo_inheritance() {
   //
   //
   //
-  
 }
 
 /////////////////////////////////// Week 10 ///////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief In this week we covered polymorphism
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: Polymorphism is used in this function to
+ output different data ints and strings when different objects are used. The
+ output for the objects are different due to the change in the Person parent
+ class method drive() from the Firefighter and MailPerson child/sub class methos
+ drive().
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_polymorphism() {
@@ -559,23 +532,21 @@ void demo_polymorphism() {
   // a context that expects the supertype).[Familiarity] A function call on a
   // base class type can go to the derived implementation. in c++ that is
   // throught the key word "virtual"
-
-  
 }
 
 /////////////////////////////////// Week 11 ///////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief This function is based off of exceptions and error handling.
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: In this function we cover exception handling
+ and observe how this changes with polymorphism causing different types of
+ exception being caught.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_exception() {
@@ -613,25 +584,22 @@ void demo_exception() {
 
 /////////////////////////////////// Week 12 ///////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief This week we covered templates.
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: This week we covered templates and the use
+ of auto in order to pass datatypes themselves to other functions. This is based
+ off of code we completed in Professor Vanselows class Templates carry over data
+ types contaainer stores multiple datatypes like vectors or arrays
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_generics() {
   std::cout << "12: Generics/Templates\n\n";
-  // this is based off of code we completed in Professor Vanselows class
-
-  // Templates carry over data types contaainer stores multiple datatypes like
-  // vectors or arrays
   demonstrate_template();
 
   // Working on templates/auto is essentially the easier version of this code:
@@ -640,33 +608,28 @@ void demo_generics() {
 
   // add_nums for doubles only using overloading
   // double add_nums(double num1, double int2) { return num1 + int2; }
-
-  // don't forget L0 7
-
-
 }
 
 /////////////////////////////////// Week 13 ///////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief This week primarily covers operator overloading
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: This week primarily covers operator
+ overloading. This example of operator overload is from a hackerRank that we
+ worked on in class
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_operators() {
   std::cout << "13: Operators - Pointer Arithmetic\n";
 
-  // This week primarily covers operator overloading
-  // This example of operator overload is from a hackerRank that we worked on in
-  // class LO1c. Utilize an initialization list
+  //
+  // LO1c. Utilize an initialization list
   Complex x, y;
   std::string s1, s2;
   std::cout << "Please input an equation 'a+ib' where a and b are numbers and "
@@ -679,23 +642,20 @@ void demo_operators() {
   y.input(s2);
   Complex z = x + y;
   std::cout << "Adding equations:\n" << z << std::endl;
-
- 
 }
 
 /////////////////////////////////// Week 14 ///////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief This function covers enums.
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: this program is a quick and easy example we
+ worked on HackerRank in class. Incrementing and decrementing an enumerator
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_enueratedTypes() {
@@ -719,9 +679,6 @@ void demo_enueratedTypes() {
   // readability purposes when you need to represent a specific, predefined set
   // of states.
 
-  // this program is a quick and easy example we worked on HackerRank in class
-  // Incrementing and decrementing an enumerator
-
   int num = 0;
   std::cout << "\nPlease type a number: \n";
   std::cin >> num;
@@ -731,23 +688,20 @@ void demo_enueratedTypes() {
   std::cout << "3. " << static_cast<int>(f) << std::endl;
   std::cout << "4. " << static_cast<int>(f--) << std::endl;
   std::cout << "5. " << static_cast<int>(f) << std::endl;
-
-
 }
 
 /////////////////////////////////// Week 15 ///////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief This isn't much of a function just wrap-up week
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: Not much code here, this week we just
+ focused on finishing up our projects.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Void
 
  */
 void demo_wrapUp() {
@@ -760,17 +714,18 @@ void demo_wrapUp() {
 
 ///////////////////////////////////// Main /////////////////////////////////////
 
-/** @brief Short description of function.
+/** @brief Main function starts off the running program.
 
  *
 
- *  Longer description of function.
+ *  Longer description of function: This function takes the user's name and
+ greets them. Then it shows the user a list of topics to choose from. This is
+ kind of like a table of contents. Where numbers 1-16 shows you the code from
+ the listed topics.
 
  *
 
- *  @param One for each parameter with the name and a description
-
- *  @return The word void or a description of what is returned
+ *  @return Should not return
 
  */
 int main() {
@@ -897,9 +852,7 @@ int main() {
 }
 
 // endl requires std::
-
-///////////////////////////////////////////////////// Useful links
-///////////////////////////////////////////////////////////////
+/////////////////////////////// Useful link ///////////////////////////////
 // https://www.learncpp.com/
 // These are the requirments for this project
 // https://sites.google.com/site/profvanselow/course/cop-3003/projects-3003
