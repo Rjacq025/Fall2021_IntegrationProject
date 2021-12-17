@@ -11,7 +11,7 @@ I am working on this assignment at Florida Gulf Coast University (and also at ho
 
 
 ## Documentation
-
+https://rjacq025.github.io/Fall2021_IntegrationProject/
 
 ## Diagrams
 
@@ -20,7 +20,7 @@ I am working on this assignment at Florida Gulf Coast University (and also at ho
 
 
 ## Built With
-
+Visual Studio: An IDE that uses an Object Oriented Programming known as C++
 
 ## Contributing
 
@@ -32,7 +32,7 @@ Richardson Jacques
 
 
 ## Acknowledgments
-
+The major contribution to this project would have to be professor Vanselow and the HackerRank examples for teaching me what I created in the program. I would also like go give thanks to the professor's TA Fairo for helping me understand some of the lessons.
 
 ## History
 
