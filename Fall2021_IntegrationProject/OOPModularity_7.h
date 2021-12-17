@@ -19,6 +19,7 @@
 #include <iostream>
 
 // LO1. Design and implement a class. [Usage]
+
 class Stack {
   // fields
  private:

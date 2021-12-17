@@ -17,6 +17,18 @@
 
 #pragma once
 #include "Person_10.h"
+
+/** @brief FireFighter child/sub/derived class
+
+ *
+
+ *  Longer description of function: This firefighter class derives from the person_10 class and overrides the drive function
+
+ *
+
+ *  @return No return
+
+ */
 class FireFighter_10 : public Person_10 {
  public:
   std::string drive() override { return "fast"; }

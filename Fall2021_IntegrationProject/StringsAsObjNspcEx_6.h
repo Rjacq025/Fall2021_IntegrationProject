@@ -22,6 +22,11 @@
 
 #include <iostream>
 
+/** @brief shows how code can save data to a file
+
+ *  @return void
+
+ */
 void demo_save_to_file() {
   std::ofstream myfile("example.txt");
   // class object
@@ -40,6 +45,12 @@ void demo_save_to_file() {
 
 // strings are technically a class
 // line is technically a variable
+
+/** @brief Shows how code can pull data from a file
+
+ *  @return void
+
+ */
 void demo_read_from_file() {
   std::string line;
   std::ifstream myfile("example.txt");

@@ -18,6 +18,18 @@
 #pragma once
 #include "Person_10.h"
 
+/** @brief Mailperson child/sub/derived class
+
+ *
+
+ *  Longer description of function: This MailPerson class derives from the
+ person_10 class and overrides the drive function
+
+ *
+
+ *  @return No return
+
+ */
 class MailPerson_10 : public Person_10 {
  private:
   // int num_parcels = 0; // not used

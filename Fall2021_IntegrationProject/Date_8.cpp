@@ -30,9 +30,9 @@
 
  *
 
- *  @param year: The year part of the date (YYYY/MM/DD)
- *  @param month: The month part of the date (YYYY/MM/DD)
- *  @param day: The day part of the date (YYYY/MM/DD)
+ *  @param int year: The year part of the date (YYYY/MM/DD)
+ *  @param int month: The month part of the date (YYYY/MM/DD)
+ *  @param int day: The day part of the date (YYYY/MM/DD)
 
  *  @return Date
 
@@ -48,9 +48,9 @@ Date_8::Date_8(int year, int month, int day) { SetDate(year, month, day); }
 
  *
 
- *  @param year: The year part of the date (YYYY/MM/DD)
- *  @param month: The month part of the date (YYYY/MM/DD)
- *  @param day: The day part of the date (YYYY/MM/DD)
+ *  @param int year: The year part of the date (YYYY/MM/DD)
+ *  @param int month: The month part of the date (YYYY/MM/DD)
+ *  @param int day: The day part of the date (YYYY/MM/DD)
 
  *  @return void
 

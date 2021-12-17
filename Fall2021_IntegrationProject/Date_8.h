@@ -28,6 +28,21 @@
 // private members. [Usage]
 // LO1a. At least one class in a header file with non-trivial methods
 // implemented in a cpp file
+
+
+
+/** @brief Encapsulation run-down.
+
+ *
+
+ *  Longer description of function: This class is used to cover encapsulation with the use of
+ access identifiers and how to work with hidden data.
+
+ *
+
+ *  @return No return value
+
+ */
 class Date_8 {
  private:
   int m_year;

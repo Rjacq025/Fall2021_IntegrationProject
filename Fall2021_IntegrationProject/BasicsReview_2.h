@@ -21,10 +21,22 @@
 
 #include <iostream>
 
-// for this function we will actively note down the structure of a
+
+/** @brief This is the run-down of a function/method.
+
+ *
+
+ *  Longer description of function: For this function we will actively note down the structure of a
 // function/method as well as how to call one. (This can be done in functions or
 // in "main")
 
+ *
+
+ *  @param double meal_price: price the user inputs for the meal
+
+ *  @return total_price: meal price with a tax and tip added to it.
+
+ */
 constexpr double calc_total_meal_price(
     double meal_price) noexcept {  // header(parameter), void is the return type
   // function body

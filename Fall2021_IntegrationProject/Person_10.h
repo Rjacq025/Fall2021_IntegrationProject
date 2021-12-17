@@ -20,6 +20,19 @@
 #include <iostream>
 #include <string>
 
+/** @brief Person parent/super/base class
+
+ *
+
+ *  Longer description of function: This person class has the base output for
+ the functions that it passes onto it's child classes unless they override this
+ methods for themselves.
+
+ *
+
+ *  @return No return
+
+ */
 class Person_10 {
  private:
   int age = 0;
@@ -27,11 +40,33 @@ class Person_10 {
   std::string dob;
 
  public:
-  virtual std::string drive() { return "normal"; }
-  // the keyword virtual is used when a function is intended to be overriden
-  // It will go down to the
-  // "Final" prevents derived/sub classes from changing the behavior of
-  // base/super classes. This goes: datatype header() final {}
+  /** @brief Base drive() method for the class hierarchy system
 
+  *
+
+  *  Longer description of function:
+  the keyword virtual is used when a function is intended to be overriden. It
+  will go down to the "Final" prevents derived/sub classes from changing the
+  behavior of  base/super classes. This goes: datatype header() final {}
+
+  *
+
+  *  @return "normal"
+
+  */
+  virtual std::string drive() { return "normal"; }
+
+  /** @brief Base get_older() method for the class hierarchy system
+
+  *
+
+  *  Longer description of function: This function is kind of like the drive()
+  function. We don't really use this method though
+
+  *
+
+  *  @return ++age
+
+  */
   virtual int const get_older() noexcept { return ++age; }
 };

@@ -17,7 +17,6 @@
 
  */
 
-#pragma once
 #include <algorithm>
 #include <cmath>
 #include <cstdio>
@@ -27,17 +26,39 @@
 // LO2. Use subclassing to design simple class hierarchies that allow code to be
 // reused for distinct subclasses. [Usage]
 
+/** @brief triangle super/parent/base class
+
+ *
+
+ *  Parent class of the isoceles and equilateral classes
+
+ *
+
+ *  @return no return
+
+ */
 class Triangle {
  public:
   void triangle() { std::cout << "I am a triangle\n"; }
 };
 
+/** @brief Isoceles sub/child/derived class
+
+ *
+
+ *  @return no return
+
+ */
 class Isosceles : public Triangle {
  public:
   void isosceles() { std::cout << "I am an isosceles triangle\n"; }
 };
 
-// Write your code here.
+/** @brief Equilateral sub/child/derived class
+
+ *  @return no return
+
+ */
 class Equilateral : public Isosceles {
  public:
   void equilateral() { std::cout << "I am an equilateral triangle\n"; }

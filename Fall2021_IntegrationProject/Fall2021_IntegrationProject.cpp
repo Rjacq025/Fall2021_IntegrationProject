@@ -661,24 +661,6 @@ void demo_operators() {
 void demo_enueratedTypes() {
   std::cout << "14: Enumerated Types\n";
 
-  // There are two types of enums
-  // enums don't have methods in c++
-  // Don't use ALL_CAPS for enumerators
-
-  // don't have an enum where the objects have the same values (the enumerations
-  // become interchangeable), it might not be an error in c++ but it is poor
-  // coding practice! This should be avoided.
-
-  // Best practice: Don't assign specific values to your enumerators
-
-  // Best practice: Don't assign the same value to two enumerators
-  // in the same enumeration unless there's a very good reason.
-
-  // Enums are like a class in which all of the objects are predefined
-  // Enumerated types are incredibly useful for code documentation and
-  // readability purposes when you need to represent a specific, predefined set
-  // of states.
-
   int num = 0;
   std::cout << "\nPlease type a number: \n";
   std::cin >> num;

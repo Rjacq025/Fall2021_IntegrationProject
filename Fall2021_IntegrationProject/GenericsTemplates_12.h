@@ -24,6 +24,31 @@
 
 // in c++ 20 if you use "auto" the compiler figures out the datatype by itself
 // abbreviated function template
+
+/** @brief auto function
+
+ *
+
+ *  Longer description of function:
+ What if you want the template to accept different datatypes (int, double) do
+ this instead
+
+ auto keyword (C++ 20) When the auto keyword is used as a parameter type in a
+ normal function, the compiler will auto matically convert the function into a
+ function template with each auto parameter becoming an independent template
+ type parameter. this method for creating a function is called an abbreviated
+ function template
+
+ *
+
+ *  @param auto num1: variable that is going to be paired with a variety of
+ different datatypes
+ *  @param auto num2: variable that is going to be paired with a variety of
+ different datatypes
+
+ *  @return num1 + num2
+
+ */
 const auto add_nums(auto num1, auto num2) noexcept { return num1 + num2; }
 
 // You can even use classes(like datatypes) in templates
@@ -32,15 +57,50 @@ class Aiden {
   const Aiden() noexcept = default;
 };
 
-// Use a single capital letter(starting with T) to name your template types
-// (e.g, T, U, V, etc...)
-// T represents a blank spot for any type of data type(s)
+/** @brief Short description of function.
 
+ *
+
+ *  Longer description of function:
+ Use a single capital letter(starting with T) to name your template types (e.g,
+ T, U, V, etc...) T represents a blank spot for any type of data type(s)
+
+ *
+
+ *  @param T thing
+
+ *  @return thing
+
+ */
 template <typename T>
 const T return_it(T thing) noexcept {
   return thing;
 }
 
+/** @brief Implementation of templates
+
+ *
+
+ *  Longer description of function;
+ Our goal here is to reduce the duplications we don't want two functions doing
+ the same thing we want one
+
+ vectors are like a template/class
+
+ Behind the scenes Templeate argument deduction: the compiler deduces the type
+ that should be used from the argument types
+
+ templates types are sometimes called generic types
+
+ a good rule of thumb is to create normal functions at first, and then convert
+ them into function templates if you find you need an overload for different
+ parameter types
+
+ *
+
+ *  @return void
+
+ */
 void demonstrate_template() {
   constexpr int int1 = 1;
   constexpr int int2 = 2;
@@ -62,29 +122,6 @@ void demonstrate_template() {
 // T add_nums(T num1, T num2) {
 //  return num1 + num2;
 //}
-
-// What if you want the template to accept different datatypes (int, double) do
-// this instead
-
-// Our goal here is to reduce the duplications we don't want two
-// functions doing the same thing we want one
-
-// vectors are like a template/class
-
-// Behind the scenes Templeate argument deduction: the compiler deduces
-// the type that should be used from the argument types
-
-// templates types are sometimes called generic types
-
-// a good rule of thumb is to create normal functions at first, and then
-// convert them into function templates if you find you need an overload
-// for different parameter types
-
-// auto keyword (C++ 20) When the auto keyword is used as a parameter type
-// in a normal function, the compiler will auto matically convert the
-// function into a function template with each auto parameter becoming an
-// independent template type parameter. this method for creating a function
-// is called an abbreviated function template
 
 // Template classes are ideal for implementing container classes
 
